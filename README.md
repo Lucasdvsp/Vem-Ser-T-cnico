@@ -1,2 +1,2 @@
-# Vem-Ser-T-cnico
+# Vem-Ser-Técnico
 Projeto Interdisciplinar desenvolvido na Escola Técnica Estadual de Taboão da Serra - 2026
