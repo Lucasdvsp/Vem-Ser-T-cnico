@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 132px;
+  padding: 0 46px;
+  background-color: #FFE4E6;
+}
+
+.header__right {
+  display: flex;
+  gap: 20px;
+}
+
+.header__sobre {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+.header__logo img {
+  height: 76px;
+  display: block;
+}
+
+.header__btn {
+  padding: 12px 40px;
+  background-color: #FFD7DB;
+  border: 2px solid #FFAFB7;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+.header__btn:hover {
+  background-color: #FFAFB7;
+}
