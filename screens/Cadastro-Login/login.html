@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vem Ser Técnico - Cadastro</title>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/login.css">
 </head>
 
 <body>
@@ -21,35 +21,24 @@
         <section id="ladoDireitoCadastro">
             <div id="containerCadastro">
                 <form id="formTelaCadastro">
-                    <h2>Cadastre sua conta</h2>
-                    <label for="nome">Data de Nascimento</label>
+                    <h2>Acessar a plataforma</h2>
+                    <label for="email">Email</label>
                     <input
-                        type="date"
-                        id="DataNascimentoInputCadastro2"
-                        name="DataNasc"
-                    >
-                    <label for="cpf">Cidade</label>
-                    <input
-                        type="text"
-                        id="CidadeInputCadastro2"
-                        name="Cidade"
-                    >
-                    <label for="email">Curso</label>
-                    <input
-                        type="c"
+                        type="email"
                         id="email"
                         name="email"
                     >
-                    <label for="senha">Série</label>
+                    <label for="senha">Senha</label>
                     <input
                         type="password"
                         id="senha"
                         name="senha"
                     >
-                    <button type="submit">Próximo</button>
+                    <button type="submit">Entrar</button>
                 </form>
                 <div id="linksCadastro">
-                    <span>Já tem uma conta? <a href="/screens/login.html">Faça o login</a></span>
+                    <a href="/screens/Cadastro-Login/esqueciASenha.html">Esqueci minha senha</a>
+                    <span>Não tem uma conta? <a href="/screens/Cadastro-Login/cadastro.html">Cadastre-se</a></span>
                 </div>
             </div>
         </section>
