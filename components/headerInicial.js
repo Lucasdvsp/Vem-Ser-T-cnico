@@ -5,7 +5,7 @@ class SiteHeader extends HTMLElement {
 
         const left = isHome
             ? `<a href="/screens/sobre.html" class="header__sobre">Sobre</a>`
-            : `<a href="index.html" class="header__logo" aria-label="Voltar para a página inicial">
+            : `<a href="/index.html" class="header__logo" aria-label="Voltar para a página inicial">
                    <img src="/asssets/LogoVerm.png" alt="Vem Ser Técnico">
                </a>`;
 
@@ -13,8 +13,8 @@ class SiteHeader extends HTMLElement {
             <header class="header">
                 <div class="header__left">${left}</div>
                 <div class="header__right">
-                    <a href="login.html" class="header__btn">Login</a>
-                    <a href="cadastro.html" class="header__btn">Cadastro</a>
+                    <a href="/screens/Cadastro-Login/login.html" class="header__btn">Login</a>
+                    <a href="/screens/Cadastro-Login/cadastro.html" class="header__btn">Cadastro</a>
                 </div>
             </header>
         `;

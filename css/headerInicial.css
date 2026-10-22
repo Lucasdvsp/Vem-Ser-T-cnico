@@ -1,10 +1,20 @@
+@import url('https://googleapis.com');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 132px;
   padding: 0 46px;
-  background-color: #FFE4E6;
+  background-color: #FFE6E9;
+  width: 100vw;
+  height: 15vh;
+  overflow: hidden;
 }
 
 .header__right {
@@ -17,6 +27,7 @@
   font-weight: bold;
   color: #000;
   text-decoration: none;
+  font-family: 'roboto', sans-serif;
 }
 
 .header__logo img {
@@ -27,12 +38,13 @@
 .header__btn {
   padding: 12px 40px;
   background-color: #FFD7DB;
-  border: 2px solid #FFAFB7;
+  border: 1px solid #FFAFB7;
   border-radius: 6px;
   font-size: 20px;
   font-weight: bold;
   color: #000;
   text-decoration: none;
+  font-family: 'roboto', sans-serif;
 }
 
 .header__btn:hover {
