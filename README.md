@@ -8,6 +8,7 @@ Projeto Interdisciplinar desenvolvido na Escola Técnica Estadual de Taboão da 
 - Questionários
 - Aulas remotas
 - Autenticação de Usuários
+- Conexão com Banco de Dados
 - Medições de desempenho
   
 ## 🎨 Layout / Demonstração
