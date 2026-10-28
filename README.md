@@ -1,6 +1,13 @@
 # Vem-Ser-Técnico
 Projeto Interdisciplinar desenvolvido na Escola Técnica Estadual de Taboão da Serra - 2026
 
+## 👨‍🎓 Integrantes
+
+- Leonardo Cavalcante de Souza
+- Lucas Paulino Ramos
+- Nathan Castillo Morais
+- Stella de Morais Nicolau
+  
 ## 💻 Sobre o projeto
 - O projeto "Vem Ser Técnico" se trata de um software com o objetivo de facilitar o acesso ao ensino superior e médio técnico, sobretudo nas instituições do Centro Paula Souza (CPS), sendo elas as ETECs e FATECs, em busca de democratizar o acesso à formação e informação sobre os cursos e suas matérias técnicas, preparando seus usuários para o dia a dia do curso.
   
