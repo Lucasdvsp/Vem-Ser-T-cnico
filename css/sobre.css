@@ -7,19 +7,130 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-   
-#telaInicial {
+
+/* Estrutura principal */
+
+#telaSobre {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-.conteudo {
-    position: relative;
+/* Conteúdo da página */
+
+.conteudoSobre {
     flex: 1;
+    width: 100%;
+    padding: 52px 5% 80px;
+}
+
+/* Seção Sobre Nós */
+
+#sobre-nos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#sobre-nos h1,
+#objetivo h2 {
+    color: #a90000;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.textoInicial {
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: justify;
+    margin-bottom: 32px;
+}
+
+.imgSobre {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 0 auto 35px;
+}
+
+.textoSobre {
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+/* Seção Objetivo */
+
+#objetivo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0;
+}
+
+#objetivo h2 {
+    margin-bottom: 25px;
+}
+
+.conteudoObjetivo {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 32px 16px;
-    overflow: hidden;
+    justify-content: space-between;
+    gap: 45px;
+    width: 100%;
+    padding: 0 3%;
+}
+
+.imgObjetivo {
+    width: 32%;
+    height: auto;
+    object-fit: contain;
+}
+
+.textoObjetivo {
+    width: 60%;
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: justify;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    .conteudoSobre {
+        padding: 35px 5% 50px;
+    }
+
+    #sobre-nos h1,
+    #objetivo h2 {
+        font-size: 27px;
+    }
+
+    .textoInicial,
+    .textoSobre,
+    .textoObjetivo {
+        font-size: 18px;
+    }
+
+    .imgSobre {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .conteudoObjetivo {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .imgObjetivo {
+        width: 65%;
+    }
+
+    .textoObjetivo {
+        width: 100%;
+    }
 }
