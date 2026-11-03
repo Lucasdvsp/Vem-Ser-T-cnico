@@ -31,7 +31,8 @@
   justify-content: center;
 }
 
-.footer__logo img {
-  height: 76px;
-  display: block;
+.footer__logo {
+  width: 40%;
+  height: auto;
+  object-fit: contain;
 }

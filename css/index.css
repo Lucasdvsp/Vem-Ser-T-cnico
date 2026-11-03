@@ -48,7 +48,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 220px;
+    width: 300px;
     height: auto;
 }
 
@@ -56,6 +56,6 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 200px;
+    width: 500px;
     height: auto;
 }   

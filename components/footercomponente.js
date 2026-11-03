@@ -5,7 +5,7 @@ class SiteFooter extends HTMLElement {
         this.innerHTML = `
             <footer class="footer">
                 <div class="footer__left">
-                 <img src="asssets/LogoTelaCadastro.png" alt="Vem Ser Técnico">
+                 <img class='footer__logo'src="asssets/LogoTelaCadastro.png" alt="Vem Ser Técnico">
                 </div>
                 <div class="footer__right">
                     <p class="footerText">© 2026 Vem Ser Técnico. Todos os direitos reservados</p>
