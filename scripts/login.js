@@ -55,7 +55,7 @@ formulario.addEventListener("submit", async (event) => {
         alert(`Bem-vindo, ${perfil.nome}!`);
 
         // REDIRECIONAR
-        window.location.href = "/index.html";
+        window.location.href = "/screens/home.html";
 
     } catch (error) {
 

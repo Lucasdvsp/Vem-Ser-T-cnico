@@ -161,7 +161,8 @@ formulario.addEventListener("submit", async (event) => {
 
         alert("Cadastro realizado com sucesso!");
 
-        // Posteriormente definiremos a página inicial.
+        // REDIRECIONAR PARA A HOME DA PLATAFORMA
+        window.location.href = "/screens/Plataforma/home.html";
 
     } catch (error) {
 
