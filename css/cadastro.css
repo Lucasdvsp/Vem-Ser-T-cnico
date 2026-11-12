@@ -66,6 +66,20 @@ body {
     color: #333;
     margin-bottom: 3px;
 }
+select {
+    width: 100%;
+    height: 30px;
+    padding: 3px 7px;
+    margin-bottom: 10px;
+    border: 1px solid #09090997;
+    border-radius: 6px;
+    outline: none;
+    font-size: 12px;  
+}
+
+select:focus {
+    border-color: #D72638;
+}
 
 #formTelaCadastro input {
     width: 100%;

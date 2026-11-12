@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -21,39 +22,88 @@
         <section id="ladoDireitoCadastro">
             <div id="containerCadastro">
                 <form id="formTelaCadastro">
+
                     <h2>Cadastre sua conta</h2>
-                    <label for="nome">Data de Nascimento</label>
+
+                    <label for="DataNascimentoInputCadastro2">
+                        Data de Nascimento
+                    </label>
                     <input
                         type="date"
                         id="DataNascimentoInputCadastro2"
                         name="DataNasc"
                     >
-                    <label for="cpf">Cidade</label>
-                    <input
-                        type="text"
+
+                    <label for="CidadeInputCadastro2">Cidade</label>
+                    <select
                         id="CidadeInputCadastro2"
                         name="Cidade"
+                        required
                     >
-                    <label for="email">Curso</label>
-                    <input
-                        type="c"
-                        id="email"
-                        name="email"
+                        <option value="">Carregando municípios...</option>
+                    </select>
+
+                    <label for="curso">Curso</label>
+                    <select
+                        type="text"
+                        id="cursoInputCadastro2"
+                        name="curso"
+                        required
                     >
-                    <label for="senha">Série</label>
-                    <input
-                        type="password"
-                        id="senha"
-                        name="senha"
+                    <option value="" disabled selected>Selecione seu curso</option>
+                        <optgroup label="Cursos Técnicos - Etec">
+                            <option value="Desenvolvimento_Sistemas">Desenvolvimento de Sistemas</option>
+                            <option value="Informática_Para_Internet">Informática para a Internet</option>
+                            <option value="Informática ">Informática</option>
+                        </optgroup>
+                        <optgroup label="Cursos Tecnólogos - Fatec">
+                            <option value="ADS">Análise e Desenvolvimento de Sistemas</option>
+                            <option value="BigData">Big Data em Negócios</option>
+                            <option value="Desenvolvimento_Software_Multiplataforma">Desenvolvimento de Software Multiplataforma</option>
+                            <option value="Banco_de_Dados">Banco de Dados</option>
+                            <option value="Gestao_da_Tecnologia_da_Informacao">Gestão da Tecnologia da Informação</option>
+                            <option value="JogosDigitais">Jogos Digitais</option>
+                            <option value="Redes">Redes de Computadores</option>
+                            <option value="Ciencia_de_Dados_para_Negocios">Ciência de Dados para Negócios</option>
+                            <option value="Sistemas_para_Internet">Sistemas para Internet</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="série">Série</label>
+                    <select
+                        type="text"
+                        id="sérieInputCadastro2"
+                        name="serie"
+                        required
                     >
+                    <option value="" disabled selected>Selecione sua série</option>
+                        <optgroup label="Ensino Médio">
+                            <option value="1º ano">1º ano</option>
+                            <option value="2º ano">2º ano</option>
+                            <option value="3º ano">3º ano</option>
+                        </optgroup>
+                        <optgroup label="Outros">
+                            <option value="fundamental">Cursando fundamental</option>
+                            <option value="medioCompleto">Ensino Médio Completo</option>
+                        </optgroup>
+                    </select>
+
                     <button type="submit">Próximo</button>
+
                 </form>
+
                 <div id="linksCadastro">
-                    <span>Já tem uma conta? <a href="/screens/Cadastro-Login/login.html">Faça o login</a></span>
+                    <span>
+                        Já tem uma conta?
+                        <a href="/screens/Cadastro-Login/login.html">
+                            Faça o login
+                        </a>
+                    </span>
                 </div>
             </div>
         </section>
     </main>
 
+    <script type="module" src="/scripts/cadastro2.js"></script>
 </body>
 </html>

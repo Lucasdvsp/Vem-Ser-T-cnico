@@ -1,47 +1,63 @@
+
 import {
     getAuth,
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
-    signOut
+    signOut,
+    updateProfile
 } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
 
-import { app } from './config'
+import { app } from "./config.js";
 
-const auth = getAuth(app)
+const auth = getAuth(app);
 
-export async function cadastrarUsuario(email, senha){
-    try{
-        const usuario = await createUserWithEmailAndPassword(
+// CADASTRAR USUÁRIO
+export async function cadastrarUsuario(email, senha, nome) {
+    try {
+        const resultado = await createUserWithEmailAndPassword(
             auth,
             email,
             senha
         );
-        return usuario.user;
-    } catch (error){
-        console.error("Erro no cadastro", error);
+
+        await updateProfile(resultado.user, {
+            displayName: nome
+        });
+
+        return resultado.user;
+
+    } catch (error) {
+        console.error("Erro no cadastro:", error);
         throw error;
     }
 }
-export async function logarUsuario(email, senha){
-    try{
-        const usuario = await signInWithEmailAndPassword(
+
+// FAZER LOGIN
+export async function logarUsuario(email, senha) {
+    try {
+        const resultado = await signInWithEmailAndPassword(
             auth,
             email,
             senha
         );
-        return usuario.user;
-    } catch (error){
-        console.error("Erro no login", error);
+
+        return resultado.user;
+
+    } catch (error) {
+        console.error("Erro no login:", error);
         throw error;
     }
 }
-export async function sairDaConta(){
+
+// FAZER LOGOUT
+export async function sairDaConta() {
     try {
         await signOut(auth);
-    } catch (error){
-        console.error("Erro no logout", error)
+
+    } catch (error) {
+        console.error("Erro no logout:", error);
         throw error;
     }
 }
 
-export { auth }
+export { auth };
