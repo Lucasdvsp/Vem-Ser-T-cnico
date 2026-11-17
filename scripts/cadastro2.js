@@ -162,7 +162,7 @@ formulario.addEventListener("submit", async (event) => {
         alert("Cadastro realizado com sucesso!");
 
         // REDIRECIONAR PARA A HOME DA PLATAFORMA
-        window.location.href = "/screens/Plataforma/home.html";
+        window.location.href = "screens/home.html";
 
     } catch (error) {
 
