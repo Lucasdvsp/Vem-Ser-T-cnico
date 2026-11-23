@@ -25,17 +25,17 @@ class NavBarPlataforma extends HTMLElement {
                         Home
                     </a>
 
-                    <a href="#secaoAulas">Aulas</a>
+                    <a href="/screens/aulas.html">Aulas</a>
 
-                    <a href="#secaoExercicios">Exercícios</a>
+                    <a href="/screens/exercicios.html">Exercícios</a>
 
-                    <a href="#secaoSimulados">Simulados</a>
+                    <a href="/screens/simulados.html">Simulados</a>
 
-                    <a href="#instituicoes">Instituições</a>
+                    <a href="/screens/instituicoes.html">Instituições</a>
 
                 </nav>
 
-                <a href="#perfil"
+                <a href="/screens/perfil.html"
                    class="navBarPlataforma__perfil"
                    aria-label="Meu perfil">
 

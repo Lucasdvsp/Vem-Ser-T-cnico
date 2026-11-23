@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vem Ser Técnico - Exercícios</title>
+
+    <link rel="stylesheet" href="/css/navBarPlataforma.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+
+
+<main id="telaExercicios">
+
+    <!-- NAVBAR -->
+    <nav-bar></nav-bar>
+
+    <!-- BANNER -->
+    <section id="bannerHome">
+        <img
+            src="/asssets/BannerExercicios.png"
+            alt="Banner de boas-vindas ao Vem Ser Técnico"
+        >
+    </section>
+
+    <!-- CONTEÚDO -->
+    <div class="conteudoHome">
+
+        <!-- PESQUISA E FILTROS -->
+        <section id="ferramentasHome">
+
+            <div class="barraPesquisa">
+                <input
+                    type="search"
+                    id="pesquisaHome"
+                    placeholder="Pesquisar"
+                    aria-label="Pesquisar conteúdos"
+                >
+
+                <button type="button" aria-label="Pesquisar">
+                    <span>⌕</span>
+                </button>
+            </div>
+
+            <div class="parteFiltro">
+                <div  class="titleFiltro">
+                    <p>MATÉRIAS</p>
+                </div>
+                <div class="filtrosHome">
+                    
+                    <button type="button" class="filtroAtivo">
+                        Técnicas
+                    </button>
+
+                    <button type="button">
+                        Escolares
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SEÇÕES DE CONTEÚDO -->
+        <section class="secaoHome" id="secaoAulas">
+            <h2>AULAS</h2>
+            <div class="listaCards"></div>
+        </section>
+
+        <section class="secaoHome" id="secaoExercicios">
+            <h2>EXERCÍCIOS</h2>
+            <div class="listaCards"></div>
+        </section>
+
+        <section class="secaoHome" id="secaoSimulados">
+            <h2>SIMULADOS</h2>
+            <div class="listaCards"></div>
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <site-footer></site-footer>
+
+</main>
+
+<script src="/components/navBar.js"></script>
+<script src="/components/footercomponente.js"></script>
+
+</body>
+</html>

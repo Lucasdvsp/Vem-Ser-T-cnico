@@ -1,0 +1,81 @@
+card-progresso {
+    display: block;
+}
+
+.cardProgresso {
+    position: relative;
+    width: 200px;
+    padding: 14px;
+
+    background-color: #ffd6dc;
+    border-radius: 10px;
+}
+
+.cardProgresso__icone {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 22px;
+    height: 22px;
+    /* coloque aqui o ícone de cada tipo, veja abaixo */
+}
+
+.cardProgresso__titulo {
+    padding-right: 30px;     /* espaço para o ícone */
+    font-size: 13px;
+    color: #000;
+}
+
+.cardProgresso__materia {
+    margin-bottom: 8px;
+    font-size: 9px;
+    color: #333;
+}
+
+.cardProgresso__progresso {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.cardProgresso__barra {
+    flex: 1;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.cardProgresso__preenchimento {
+    height: 100%;
+    background-color: #c91f38;
+}
+
+.cardProgresso__percentual {
+    font-size: 9px;
+    color: #c91f38;
+}
+
+.cardProgresso__botao {
+    display: block;
+    padding: 6px 0;
+
+    background-color: #ff9fae;
+    color: #fff;
+    border-radius: 20px;
+
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cardProgresso__botao:hover {
+    background-color: #c91f38;
+}
+
+.listaCards__vazio {
+    font-size: 12px;
+    color: #777;
+}

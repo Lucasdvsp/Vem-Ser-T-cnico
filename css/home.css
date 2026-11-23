@@ -36,8 +36,8 @@ body {
 ================================= */
 
 #bannerHome {
-    width: 90%;
-    margin: 0 auto 35px;
+    width: 100%;
+    margin: 0 0 1%;
 }
 
 #bannerHome img {
@@ -55,12 +55,13 @@ body {
 
 #ferramentasHome {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     gap: 25px;
 
     width: 100%;
     margin-bottom: 45px;
+    height: 42px;
 }
 
 /* Barra de pesquisa */
@@ -116,6 +117,19 @@ body {
 }
 
 /* Filtros */
+.parteFiltro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleFiltro {
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5%;
+    align-self: center;
+}
 
 .filtrosHome {
     display: flex;
@@ -124,7 +138,7 @@ body {
 }
 
 .filtrosHome button {
-    padding: 9px 20px;
+    padding: 12px 20px;
 
     border: 1px solid #c91f38;
     border-radius: 20px;
