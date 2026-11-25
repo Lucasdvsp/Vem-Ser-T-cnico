@@ -1,0 +1,886 @@
+/* =========================================
+   VEM SER TÉCNICO — PERFIL / MATÉRIAS
+========================================= */
+
+:root {
+    --vermelho: #c9233b;
+    --vermelho-escuro: #a91c31;
+    --rosa: #fde6e9;
+    --rosa-card: #fff0f2;
+    --rosa-medio: #f7c6ce;
+    --rosa-destaque: #eea2ae;
+
+    --texto: #292929;
+    --texto-secundario: #777777;
+
+    --fundo: #fafafa;
+    --branco: #ffffff;
+
+    --borda: #f1d2d7;
+
+    --sombra: 0 4px 18px rgba(140, 25, 45, 0.06);
+    --sombra-hover: 0 8px 24px rgba(140, 25, 45, 0.12);
+
+    --raio: 16px;
+}
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fundo);
+    color: var(--texto);
+    min-height: 100vh;
+}
+
+/* =========================================
+   ESTRUTURA PRINCIPAL
+========================================= */
+
+#telaMaterias {
+    display: flex;
+    min-height: calc(100vh - 90px);
+    width: 100%;
+}
+
+/* =========================================
+   SIDEBAR / PERFIL
+========================================= */
+
+.lateralPerfil {
+    width: 280px;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px 24px;
+
+    background-color: var(--branco);
+    border-right: 1px solid var(--borda);
+}
+
+/* Foto */
+
+.fotoPerfil {
+    width: 150px;
+    height: 150px;
+
+    margin-bottom: 25px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    background-color: var(--rosa);
+    border: 5px solid var(--rosa);
+
+    box-shadow: var(--sombra);
+}
+
+.fotoPerfil img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/* Dados */
+
+.dadosPerfil {
+    width: 100%;
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+.dadosPerfil h2 {
+    font-size: 22px;
+    font-weight: 700;
+
+    margin-bottom: 8px;
+
+    overflow-wrap: anywhere;
+}
+
+.dadosPerfil p {
+    color: var(--texto-secundario);
+    font-size: 14px;
+    line-height: 1.5;
+
+    margin-bottom: 18px;
+
+    overflow-wrap: anywhere;
+}
+
+.dadosPerfil span {
+    display: inline-block;
+
+    color: var(--vermelho);
+    background-color: var(--rosa);
+
+    padding: 9px 13px;
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* =========================================
+   MENU
+========================================= */
+
+.menuPerfil {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    width: 100%;
+    margin-top: auto;
+}
+
+.menuPerfil a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 13px 15px;
+
+    border-radius: 10px;
+
+    color: var(--texto);
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition:
+        background-color 0.2s,
+        color 0.2s,
+        transform 0.2s;
+}
+
+.menuPerfil a:hover {
+    background-color: var(--rosa);
+    color: var(--vermelho);
+
+    transform: translateX(3px);
+}
+
+.menuPerfil .excluirConta {
+    margin-top: 15px;
+
+    color: #d9253d;
+}
+
+.menuPerfil .excluirConta:hover {
+    background-color: #ffe3e6;
+}
+
+/* =========================================
+   CONTEÚDO
+========================================= */
+
+.conteudoMaterias {
+    flex: 1;
+    min-width: 0;
+
+    padding: 40px 50px;
+}
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.cabecalhoMaterias {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    margin-bottom: 55px;
+}
+
+.instituicao h1 {
+    color: var(--vermelho);
+
+    font-size: 27px;
+    font-weight: 700;
+
+    margin-bottom: 14px;
+}
+
+.instituicao select {
+    width: min(440px, 100%);
+    min-height: 48px;
+
+    padding: 0 16px;
+
+    background-color: var(--rosa);
+    color: var(--texto);
+
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: border 0.2s;
+}
+
+.instituicao select:hover {
+    border-color: var(--rosa-medio);
+}
+
+.instituicao select:focus {
+    outline: 2px solid var(--rosa-medio);
+}
+
+/* Logo */
+
+.logoHome {
+    width: 190px;
+    max-width: 28%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+/* =========================================
+   TÍTULO E FILTROS
+========================================= */
+
+.topoMaterias {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    margin-bottom: 35px;
+}
+
+.topoMaterias h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--vermelho);
+}
+
+/* Filtros */
+
+.filtroMaterias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.filtroMaterias p {
+    color: var(--texto-secundario);
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Container dos filtros */
+
+.botoesFiltro {
+    display: flex;
+
+    padding: 4px;
+
+    background-color: #eeeeee;
+    border-radius: 30px;
+}
+
+/* Botões */
+
+.botoesFiltro button {
+    border: none;
+    border-radius: 30px;
+
+    padding: 11px 24px;
+
+    background-color: transparent;
+    color: #555555;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s,
+        color 0.2s,
+        box-shadow 0.2s;
+}
+
+.botoesFiltro button:hover {
+    color: var(--vermelho);
+}
+
+.botoesFiltro .filtroAtivo {
+    background-color: var(--vermelho);
+    color: var(--branco);
+
+    box-shadow: 0 3px 8px rgba(201, 35, 59, 0.2);
+}
+
+.botoesFiltro .filtroAtivo:hover {
+    background-color: var(--vermelho-escuro);
+    color: var(--branco);
+}
+
+/* =========================================
+   SEÇÕES
+========================================= */
+
+.secaoMaterias {
+    margin-bottom: 38px;
+}
+
+.secaoMaterias h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-bottom: 18px;
+}
+
+/* =========================================
+   GRID DE CARDS
+========================================= */
+
+.gradeCards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fill, minmax(250px, 1fr));
+
+    gap: 20px;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.cardMateria {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 240px;
+    padding: 25px;
+
+    background-color: var(--rosa-card);
+
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+
+    box-shadow: var(--sombra);
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s,
+        border-color 0.2s;
+}
+
+.cardMateria:hover {
+    transform: translateY(-4px);
+
+    box-shadow: var(--sombra-hover);
+    border-color: var(--rosa-medio);
+}
+
+/* Nome da matéria */
+
+.cardMateria h4 {
+    color: var(--vermelho);
+
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-bottom: 8px;
+
+    padding-right: 40px;
+}
+
+.cardMateria p {
+    color: var(--texto-secundario);
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Ícone */
+
+.iconeEditar {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 10px;
+
+    background-color: rgba(255, 255, 255, 0.7);
+
+    color: var(--vermelho);
+
+    font-size: 24px;
+
+    transition: background-color 0.2s;
+}
+
+.cardMateria:hover .iconeEditar {
+    background-color: var(--branco);
+}
+
+/* =========================================
+   PROGRESSO
+========================================= */
+
+.progresso {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
+    margin: 22px 0 18px;
+}
+
+.barraProgresso {
+    flex: 1;
+
+    height: 8px;
+
+    overflow: hidden;
+
+    background-color: var(--branco);
+
+    border-radius: 20px;
+}
+
+.barraProgresso span {
+    display: block;
+
+    height: 100%;
+
+    background-color: var(--vermelho);
+
+    border-radius: 20px;
+}
+
+.progresso > span {
+    min-width: 35px;
+
+    color: var(--vermelho);
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* =========================================
+   BOTÕES DOS CARDS
+========================================= */
+
+.botaoCard {
+    width: 100%;
+    min-height: 44px;
+
+    margin-top: auto;
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: var(--vermelho);
+    color: var(--branco);
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s,
+        transform 0.2s;
+}
+
+.botaoCard:hover {
+    background-color: var(--vermelho-escuro);
+    transform: scale(1.02);
+}
+
+.botaoCard:active {
+    transform: scale(0.98);
+}
+
+/* =========================================
+   MATÉRIAS CONCLUÍDAS
+========================================= */
+
+.cardMateria.concluido {
+    background-color: #f3f3f3;
+    border-color: #e2e2e2;
+}
+
+.cardMateria.concluido h4 {
+    color: #555555;
+}
+
+.cardMateria.concluido .iconeEditar {
+    background-color: #e5e5e5;
+    color: #777777;
+}
+
+.cardMateria.concluido .botaoCard {
+    background-color: #777777;
+}
+
+.cardMateria.concluido .botaoCard:hover {
+    background-color: #555555;
+}
+
+/* =========================================
+   RODAPÉ
+========================================= */
+
+.rodapeMaterias {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    width: 100%;
+    min-height: 90px;
+
+    padding: 20px 5%;
+
+    background-color: var(--vermelho);
+    color: var(--branco);
+}
+
+.rodapeMaterias img {
+    width: 135px;
+    max-width: 30%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+.rodapeMaterias p {
+    flex: 1;
+
+    font-size: 14px;
+    text-align: center;
+}
+
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .lateralPerfil {
+        width: 230px;
+        padding: 30px 18px;
+    }
+
+    .fotoPerfil {
+        width: 125px;
+        height: 125px;
+    }
+
+    .dadosPerfil h2 {
+        font-size: 19px;
+    }
+
+    .dadosPerfil p {
+        font-size: 13px;
+    }
+
+    .dadosPerfil span {
+        font-size: 13px;
+    }
+
+    .menuPerfil a {
+        font-size: 14px;
+        padding: 11px;
+    }
+
+    .conteudoMaterias {
+        padding: 35px 30px;
+    }
+
+    .cabecalhoMaterias {
+        margin-bottom: 40px;
+    }
+
+    .instituicao h1 {
+        font-size: 23px;
+    }
+
+    .logoHome {
+        width: 150px;
+    }
+
+    .topoMaterias h2 {
+        font-size: 26px;
+    }
+
+    .gradeCards {
+        grid-template-columns:
+            repeat(auto-fill, minmax(220px, 1fr));
+    }
+}
+
+/* =========================================
+   CELULARES
+========================================= */
+
+@media (max-width: 700px) {
+
+    #telaMaterias {
+        flex-direction: column;
+    }
+
+    /* Perfil */
+
+    .lateralPerfil {
+        width: 100%;
+
+        padding: 25px 20px;
+
+        border-right: none;
+        border-bottom: 1px solid var(--borda);
+    }
+
+    .fotoPerfil {
+        width: 105px;
+        height: 105px;
+
+        margin-bottom: 15px;
+    }
+
+    .dadosPerfil {
+        margin-bottom: 20px;
+    }
+
+    .dadosPerfil h2 {
+        font-size: 20px;
+    }
+
+    .dadosPerfil p {
+        margin-bottom: 12px;
+    }
+
+    /* Menu */
+
+    .menuPerfil {
+        display: grid;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 8px;
+
+        margin-top: 0;
+    }
+
+    .menuPerfil a {
+        justify-content: center;
+
+        padding: 11px 8px;
+
+        background-color: #fafafa;
+
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .menuPerfil .excluirConta {
+        margin-top: 0;
+    }
+
+    /* Conteúdo */
+
+    .conteudoMaterias {
+        padding: 25px 20px;
+    }
+
+    /* Cabeçalho */
+
+    .cabecalhoMaterias {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 20px;
+
+        margin-bottom: 35px;
+    }
+
+    .instituicao {
+        width: 100%;
+    }
+
+    .instituicao h1 {
+        font-size: 21px;
+    }
+
+    .instituicao select {
+        width: 100%;
+    }
+
+    .logoHome {
+        width: 140px;
+        max-width: 50%;
+    }
+
+    /* Título */
+
+    .topoMaterias {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 18px;
+
+        margin-bottom: 28px;
+    }
+
+    .topoMaterias h2 {
+        font-size: 26px;
+    }
+
+    .filtroMaterias {
+        align-items: flex-start;
+    }
+
+    .botoesFiltro button {
+        padding: 10px 20px;
+    }
+
+    /* Cards */
+
+    .gradeCards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .cardMateria {
+        min-height: 225px;
+        padding: 23px;
+    }
+
+    .cardMateria h4 {
+        font-size: 18px;
+    }
+
+    .secaoMaterias h3 {
+        font-size: 18px;
+    }
+
+    /* Footer */
+
+    .rodapeMaterias {
+        flex-direction: column;
+
+        gap: 12px;
+
+        padding: 22px 15px;
+    }
+
+    .rodapeMaterias img {
+        width: 110px;
+        max-width: 100%;
+    }
+
+    .rodapeMaterias p {
+        font-size: 12px;
+    }
+}
+
+/* =========================================
+   CELULARES PEQUENOS
+========================================= */
+
+@media (max-width: 380px) {
+
+    .conteudoMaterias {
+        padding: 22px 15px;
+    }
+
+    .menuPerfil {
+        grid-template-columns: 1fr;
+    }
+
+    .menuPerfil a {
+        justify-content: flex-start;
+    }
+
+    .botoesFiltro {
+        width: 100%;
+    }
+
+    .botoesFiltro button {
+        flex: 1;
+        padding: 10px 12px;
+    }
+
+    .cardMateria {
+        padding: 20px;
+    }
+
+    .botaoCard {
+        font-size: 14px;
+    }
+}
+
+/* =========================================
+   ACESSIBILIDADE
+========================================= */
+
+button:focus-visible,
+a:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--rosa-destaque);
+    outline-offset: 3px;
+}
+
+/* Evita animações para usuários que preferem
+   movimento reduzido */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}

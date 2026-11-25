@@ -35,7 +35,7 @@ class NavBarPlataforma extends HTMLElement {
 
                 </nav>
 
-                <a href="/screens/perfil.html"
+                <a href="/screens/Perfil/perfil.html"
                    class="navBarPlataforma__perfil"
                    aria-label="Meu perfil">
 
