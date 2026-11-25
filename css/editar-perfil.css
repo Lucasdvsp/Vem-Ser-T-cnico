@@ -1,0 +1,141 @@
+/* =========================================
+   CONTROLE DAS TELAS
+========================================= */
+ 
+#viewMaterias[hidden],
+#viewEditarPerfil[hidden] {
+    display: none !important;
+}
+ 
+/* Área de edição */
+ 
+.areaPrincipal {
+    flex: 1;
+    min-width: 0;
+}
+ 
+.conteudoEditar {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    padding: 45px 6%;
+    background: #fff;
+}
+ 
+.logoEditar {
+    display: none;
+}
+ 
+/* Título */
+ 
+.tituloEditar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+ 
+.tituloEditar h1 {
+    color: #bd2035;
+    font-size: 32px;
+}
+ 
+.tituloEditar button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #bd2035;
+}
+ 
+.setaVoltar {
+    font-size: 52px;
+    line-height: 1;
+}
+ 
+/* Formulário */
+ 
+#formEditarPerfil {
+    width: 100%;
+}
+ 
+.campoFormulario {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-bottom: 38px;
+}
+ 
+.campoFormulario label {
+    font-size: 23px;
+    color: #333;
+}
+ 
+.campoFormulario input,
+.campoFormulario select {
+    width: 100%;
+    height: 62px;
+    padding: 0 16px;
+    border: 1px solid #999;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 2px 4px #00000025;
+    font-family: inherit;
+    font-size: 17px;
+}
+ 
+.campoFormulario input:focus,
+.campoFormulario select:focus {
+    outline: 2px solid #bd2035;
+    outline-offset: 2px;
+}
+ 
+/* Salvar */
+ 
+.areaBotaoSalvar {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+ 
+#btnSalvar {
+    width: 240px;
+    min-height: 62px;
+    border: none;
+    border-radius: 15px;
+    background: #d9233b;
+    color: white;
+    font-size: 29px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 3px 5px #00000035;
+}
+ 
+#btnSalvar:hover {
+    background: #b91e32;
+}
+ 
+/* Responsividade */
+ 
+@media (max-width: 768px) {
+    .conteudoEditar {
+        padding: 30px 22px;
+    }
+ 
+    .tituloEditar h1 {
+        font-size: 26px;
+    }
+ 
+    .campoFormulario label {
+        font-size: 18px;
+    }
+ 
+    .campoFormulario input,
+    .campoFormulario select {
+        height: 54px;
+    }
+ 
+    #btnSalvar {
+        width: 100%;
+        max-width: 240px;
+    }
+}

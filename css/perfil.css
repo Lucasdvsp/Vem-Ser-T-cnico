@@ -884,3 +884,200 @@ select:focus-visible {
         scroll-behavior: auto !important;
     }
 }
+
+
+/* =========================================
+   ÍCONES DO MENU
+========================================= */
+
+.menuPerfil {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    width: 100%;
+
+    /* Aproxima o menu dos dados do curso */
+    margin-top: 10px;
+}
+
+.menuPerfil a svg {
+    width: 20px;
+    height: 20px;
+
+    flex-shrink: 0;
+
+    fill: none;
+    stroke: #222222;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    transition: stroke 0.2s;
+}
+
+.menuPerfil a:hover svg {
+    stroke: #000000;
+}
+
+.menuPerfil a.excluirConta svg {
+    stroke: #222222;
+}
+
+.menuPerfil a.excluirConta:hover svg {
+    stroke: #d9253d;
+}
+
+/* =========================================
+   NOTEBOOKS E TELAS INTERMEDIÁRIAS
+========================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+}
+
+body {
+    overflow-x: clip;
+}
+
+#telaMaterias {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+}
+
+.lateralPerfil,
+.conteudoMaterias {
+    min-width: 0;
+}
+
+/* Notebooks convencionais */
+@media (min-width: 701px) and (max-width: 1200px) {
+
+    .lateralPerfil {
+        width: 205px;
+        padding: 30px 16px;
+    }
+
+    .fotoPerfil {
+        width: 115px;
+        height: 115px;
+    }
+
+    .conteudoMaterias {
+        padding: 30px 24px;
+    }
+
+    .cabecalhoMaterias {
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 35px;
+    }
+
+    .instituicao {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .instituicao h1 {
+        font-size: 22px;
+    }
+
+    .instituicao select {
+        max-width: 100%;
+    }
+
+    .logoHome {
+        width: 135px;
+        max-width: 25%;
+    }
+
+    .topoMaterias {
+        flex-wrap: wrap;
+    }
+
+    .gradeCards {
+        grid-template-columns:
+            repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+    }
+
+    .cardMateria {
+        min-width: 0;
+        padding: 20px;
+    }
+
+}
+
+/* Notebooks menores */
+@media (min-width: 701px) and (max-width: 900px) {
+
+    .lateralPerfil {
+        width: 180px;
+        padding: 25px 12px;
+    }
+
+    .conteudoMaterias {
+        padding: 25px 18px;
+    }
+
+    .dadosPerfil h2 {
+        font-size: 17px;
+    }
+
+    .menuPerfil a {
+        gap: 8px;
+        padding: 11px 8px;
+        font-size: 13px;
+    }
+
+    .menuPerfil a svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .cabecalhoMaterias {
+        align-items: flex-start;
+    }
+
+    .instituicao h1 {
+        font-size: 19px;
+    }
+
+    .logoHome {
+        width: 105px;
+    }
+
+    .topoMaterias h2 {
+        font-size: 24px;
+    }
+
+    .botoesFiltro button {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    .gradeCards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Ajustes gerais para evitar estouro */
+img,
+svg {
+    max-width: 100%;
+}
+
+select,
+button {
+    max-width: 100%;
+}
+
+.cardMateria,
+.gradeCards,
+.secaoMaterias,
+.conteudoMaterias {
+    min-width: 0;
+}
