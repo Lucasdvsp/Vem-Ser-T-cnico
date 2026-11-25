@@ -1,141 +1,218 @@
 /* =========================================
-   CONTROLE DAS TELAS
+   TELA EDITAR PERFIL
 ========================================= */
- 
-#viewMaterias[hidden],
-#viewEditarPerfil[hidden] {
-    display: none !important;
-}
- 
-/* Área de edição */
- 
-.areaPrincipal {
-    flex: 1;
-    min-width: 0;
-}
- 
+
 .conteudoEditar {
-    position: relative;
     width: 100%;
-    min-height: 100%;
-    padding: 45px 6%;
-    background: #fff;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 10px 0;
 }
- 
-.logoEditar {
-    display: none;
-}
- 
-/* Título */
- 
+
+
+/* =========================================
+   TÍTULO
+========================================= */
+
 .tituloEditar {
     display: flex;
     align-items: center;
     gap: 12px;
+
     margin-bottom: 28px;
 }
- 
-.tituloEditar h1 {
-    color: #bd2035;
-    font-size: 32px;
-}
- 
+
 .tituloEditar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+
     border: none;
     background: transparent;
+
     cursor: pointer;
+}
+
+.tituloEditar button svg {
+    width: 25px;
+    height: 25px;
+
+    fill: none;
+    stroke: #000;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.tituloEditar h1 {
     color: #bd2035;
+    font-size: 25px;
+    font-weight: 700;
 }
- 
-.setaVoltar {
-    font-size: 52px;
-    line-height: 1;
+
+.tituloEditar p {
+    color: #666;
+    font-size: 13px;
+    margin-top: 3px;
 }
- 
-/* Formulário */
- 
+
+
+/* =========================================
+   FORMULÁRIO
+========================================= */
+
 #formEditarPerfil {
     width: 100%;
 }
- 
+
 .campoFormulario {
     display: flex;
     flex-direction: column;
-    gap: 9px;
-    margin-bottom: 38px;
+    gap: 6px;
+
+    margin-bottom: 20px;
 }
- 
+
 .campoFormulario label {
-    font-size: 23px;
-    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
 }
- 
+
 .campoFormulario input,
 .campoFormulario select {
     width: 100%;
-    height: 62px;
-    padding: 0 16px;
-    border: 1px solid #999;
-    border-radius: 15px;
-    background: white;
-    box-shadow: 0 2px 4px #00000025;
-    font-family: inherit;
-    font-size: 17px;
+    height: 43px;
+
+    padding: 0 12px;
+
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+
+    background: #fff;
+
+    font-size: 14px;
+    color: #111;
+
+    box-shadow: 0 1px 3px #0000000c;
+
+    transition: border 0.2s, box-shadow 0.2s;
 }
- 
+
 .campoFormulario input:focus,
 .campoFormulario select:focus {
-    outline: 2px solid #bd2035;
-    outline-offset: 2px;
+    outline: none;
+    border-color: #bd2035;
+    box-shadow: 0 0 0 2px #bd20351c;
 }
- 
-/* Salvar */
- 
+
+
+/* =========================================
+   MENSAGEM
+========================================= */
+
+#mensagemPerfil {
+    font-size: 13px;
+    margin-top: 5px;
+    min-height: 18px;
+}
+
+#mensagemPerfil.sucesso {
+    color: #218838;
+}
+
+#mensagemPerfil.erro {
+    color: #bd2035;
+}
+
+
+/* =========================================
+   BOTÃO SALVAR
+========================================= */
+
 .areaBotaoSalvar {
     display: flex;
-    justify-content: center;
-    margin-top: 45px;
+    justify-content: flex-start;
+
+    margin-top: 24px;
 }
- 
+
 #btnSalvar {
-    width: 240px;
-    min-height: 62px;
+    min-width: 155px;
+    height: 42px;
+
+    padding: 0 20px;
+
     border: none;
-    border-radius: 15px;
-    background: #d9233b;
+    border-radius: 8px;
+
+    background: #bd2035;
     color: white;
-    font-size: 29px;
-    font-weight: bold;
+
+    font-size: 15px;
+    font-weight: 600;
+
     cursor: pointer;
-    box-shadow: 0 3px 5px #00000035;
+
+    transition: background 0.2s, opacity 0.2s;
 }
- 
+
 #btnSalvar:hover {
-    background: #b91e32;
+    background: #a7192c;
 }
- 
-/* Responsividade */
- 
-@media (max-width: 768px) {
+
+#btnSalvar:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 650px) {
+
     .conteudoEditar {
-        padding: 30px 22px;
+        padding: 0;
     }
- 
+
+    .tituloEditar {
+        margin-bottom: 22px;
+    }
+
     .tituloEditar h1 {
-        font-size: 26px;
+        font-size: 22px;
     }
- 
+
+    .tituloEditar p {
+        font-size: 12px;
+    }
+
+    .campoFormulario {
+        margin-bottom: 17px;
+    }
+
     .campoFormulario label {
-        font-size: 18px;
+        font-size: 13px;
     }
- 
+
     .campoFormulario input,
     .campoFormulario select {
-        height: 54px;
+        height: 42px;
+        font-size: 14px;
     }
- 
+
+    .areaBotaoSalvar {
+        margin-top: 20px;
+    }
+
     #btnSalvar {
         width: 100%;
-        max-width: 240px;
+        height: 43px;
     }
 }
+

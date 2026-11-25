@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vem Ser Técnico - Minhas Matérias</title>
+
+    <title>Vem Ser Técnico - Perfil</title>
+
     <link rel="stylesheet" href="/css/perfil.css">
     <link rel="stylesheet" href="/css/editar-perfil.css">
+    <link rel="stylesheet" href="/css/navBarPlataforma.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/alterar-senha.css">
 </head>
+
 <body>
-    <!-- HEADER EXISTENTE -->
-    <site-header></site-header>
-    <!-- CONTEÚDO PRINCIPAL -->
-    <main id="telaMaterias">
-        <!-- =====================================
-             SIDEBAR DO PERFIL
-        ====================================== -->
+
+    <!-- NAVBAR -->
+    <nav-bar></nav-bar>
+
+    <main class="telaPerfil">
+
+        <!-- SIDEBAR -->
         <aside class="lateralPerfil">
-            <!-- FOTO -->
+
             <div class="fotoPerfil">
                 <img
                     src="/assets/perfilPadrao.png"
@@ -25,330 +31,429 @@
                     id="fotoUsuario"
                 >
             </div>
-            <!-- DADOS -->
+
             <div class="dadosPerfil">
-                <h2 id="nomeUsuario">
-                    Carregando...
-                </h2>
-                <p id="emailUsuario">
-                    Carregando...
-                </p>
-                <span id="cursoUsuario">
-                    Carregando curso...
-                </span>
+
+                <h2 id="nomeUsuario">Carregando...</h2>
+
+                <p id="emailUsuario">Carregando...</p>
+
+                <span id="cursoUsuario">Carregando...</span>
+
             </div>
-            <!-- MENU -->
+
             <nav class="menuPerfil">
+
                 <a href="#editar-perfil" id="btnEditarPerfil">
-                    ♟ Editar perfil
+
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/>
+                        <path d="M4 20a8 8 0 0 1 16 0"/>
+                    </svg>
+
+                    Editar perfil
                 </a>
-                <a href="#">
-                    🔒 Alterar senha
+
+                <a href="#" id="btnAlterarSenha">
+
+                    <svg viewBox="0 0 24 24">
+                        <rect x="4" y="10" width="16" height="11" rx="2"/>
+                        <path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+                        <path d="M12 14v3"/>
+                    </svg>
+
+                    Alterar senha
                 </a>
-                <a href="#">
-                    ⚙ Configurações
+
+                <a href="#" id="btnConfiguracoes">
+
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-1.7 2.8-1.5-.6a1.7 1.7 0 0 0-1.8.6l-.1.2h-3.4l-.5-1.5a1.7 1.7 0 0 0-1.5-1.1l-.2-.1-1.5.6-1.7-2.8 1.1-1.2a1.7 1.7 0 0 0 0-1.8L5.9 11l1.7-2.8 1.5.6a1.7 1.7 0 0 0 1.8-.6l.1-.2h3.4l.5 1.5a1.7 1.7 0 0 0 1.5 1.1l.2.1 1.5-.6 1.7 2.8-1.1 1.2a1.7 1.7 0 0 0 0 1.8Z"/>
+                    </svg>
+
+                    Configurações
                 </a>
+
                 <a href="#" id="btnSair">
-                    ⇥ Sair
+
+                    <svg viewBox="0 0 24 24">
+                        <path d="M10 17l5-5-5-5"/>
+                        <path d="M15 12H3"/>
+                        <path d="M12 3h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-7"/>
+                    </svg>
+
+                    Sair
                 </a>
-                <a
-                    href="#"
-                    id="btnExcluirConta"
-                    class="excluirConta"
-                >
-                    ▤ Excluir conta
+
+                <a href="#" id="btnExcluirConta" class="excluirConta">
+
+                    <svg viewBox="0 0 24 24">
+                        <path d="M4 7h16"/>
+                        <path d="M10 11v6"/>
+                        <path d="M14 11v6"/>
+                        <path d="m5 7 1 14h12l1-14"/>
+                        <path d="M9 7V4h6v3"/>
+                    </svg>
+
+                    Excluir conta
                 </a>
+
             </nav>
+
         </aside>
 
-        <!-- =====================================
-             ÁREA CENTRAL
-        ====================================== -->
-        <div class="areaPrincipal">
 
-            <!-- =================================
-                 TELA 1: MINHAS MATÉRIAS
-            ================================== -->
-            <section
-                id="viewMaterias"
-                class="conteudoMaterias"
-            >
-                <!-- CABEÇALHO -->
-                <header class="cabecalhoMaterias">
+        <!-- CONTEÚDO -->
+        <section class="areaPrincipal">
+
+            <!-- TELA INICIAL: MATÉRIAS -->
+            <section id="viewMaterias" class="conteudoMaterias">
+
+                <div class="cabecalhoPerfil">
+
                     <div class="instituicao">
+
                         <h1>Instituição de Interesse</h1>
-                        <select id="selectInstituicao">
-                            <option value="etec-taboao">
+
+                        <select id="instituicaoInteresse">
+                            <option value="Etec de Taboão da Serra">
                                 Etec de Taboão da Serra
                             </option>
                         </select>
-                    </div>
-                    <img
-                        src="/assets/logoVemSerTecnico.png"
-                        alt="Vem Ser Técnico"
-                        class="logoHome"
-                    >
-                </header>
 
-                <!-- TÍTULO E FILTROS -->
-                <div class="topoMaterias">
-                    <h2>Matérias</h2>
-                    <div class="filtroMaterias">
-                        <p>MATÉRIAS</p>
-                        <div class="botoesFiltro">
-                            <button
-                                type="button"
-                                class="filtroAtivo"
-                            >
-                                Técnicas
-                            </button>
-                            <button type="button">
-                                Escolares
-                            </button>
-                        </div>
                     </div>
+
+                    <img
+                        src="/asssets/logoVerm.png"
+                        alt="Vem Ser Técnico"
+                        class="logoPerfil"
+                    >
+
                 </div>
+
+
+                <!-- MATÉRIAS -->
+                <div class="cabecalhoMaterias">
+                    <h2>Matérias</h2>
+                </div>
+
 
                 <!-- EM ANDAMENTO -->
                 <section class="secaoMaterias">
+
                     <h3>Em andamento</h3>
-                    <div class="gradeCards">
-                        <article class="cardMateria">
-                            <span class="iconeEditar">✎</span>
-                            <h4>ALGORITMOS</h4>
-                            <p>Nome da Matéria</p>
-                            <div class="progresso">
-                                <div class="barraProgresso">
-                                    <span style="width: 55%"></span>
-                                </div>
-                                <span>55%</span>
-                            </div>
-                            <button
-                                type="button"
-                                class="botaoCard"
-                            >
-                                Continuar
-                            </button>
-                        </article>
+
+                    <div
+                        id="materiasAndamento"
+                        class="containerMaterias"
+                    >
+                        <!-- Cards futuramente -->
                     </div>
+
                 </section>
+
 
                 <!-- CONCLUÍDO -->
                 <section class="secaoMaterias">
+
                     <h3>Concluído</h3>
-                    <div class="gradeCards">
-                        <article class="cardMateria concluido">
-                            <span class="iconeEditar">☷</span>
-                            <h4>ALGORITMOS</h4>
-                            <p>Nome da Matéria</p>
-                            <button
-                                type="button"
-                                class="botaoCard"
-                            >
-                                Certificado
-                            </button>
-                        </article>
+
+                    <div
+                        id="materiasConcluidas"
+                        class="containerMaterias"
+                    >
+                        <!-- Cards futuramente -->
                     </div>
+
                 </section>
+
             </section>
 
-            <!-- =================================
-                 TELA 2: EDITAR PERFIL
-            ================================== -->
+
+            <!-- EDITAR PERFIL -->
             <section
                 id="viewEditarPerfil"
                 class="conteudoEditar"
                 hidden
             >
-                <!-- LOGO -->
-                <div class="logoEditar">
-                    <img
-                        src="/assets/logoVemSerTecnico.png"
-                        alt="Vem Ser Técnico"
-                    >
-                </div>
 
-                <!-- FORMULÁRIO -->
-                <div class="areaFormulario">
-                    <!-- TÍTULO -->
-                    <div class="tituloEditar">
-                        <button
-                            type="button"
-                            id="btnVoltarMaterias"
-                            aria-label="Voltar para matérias"
-                        >
-                            <span class="setaVoltar">‹</span>
-                        </button>
-                        <h1>Editar Perfil</h1>
+                <div class="tituloEditar">
+
+                    <button
+                        type="button"
+                        id="btnVoltarMaterias"
+                        aria-label="Voltar"
+                    >
+
+                        <svg viewBox="0 0 24 24">
+                            <path d="m15 18-6-6 6-6"/>
+                        </svg>
+
+                    </button>
+
+                    <div>
+                        <h1>Editar perfil</h1>
+                        <p>Atualize suas informações pessoais.</p>
                     </div>
 
-                    <form id="formEditarPerfil">
-                        <!-- NOME -->
-                        <div class="campoFormulario">
-    
-                            <label for="cidade">Cidade</label>
-                        
-                            <select id="cidade" name="cidade">
-                                <option value="">Selecione sua cidade</option>
-                            </select>
-    
-                         </div>
-
-                        <!-- EMAIL -->
-                        <div class="campoFormulario">
-                            <label for="email">
-                                Email
-                            </label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                placeholder="Digite seu e-mail"
-                                required
-                            >
-                        </div>
-
-                        <!-- CIDADE -->
-                        <div class="campoFormulario">
-                            <label for="cidade">
-                                Cidade
-                            </label>
-                            <input
-                                type="text"
-                                id="cidade"
-                                name="cidade"
-                                placeholder="Digite sua cidade"
-                            >
-                        </div>
-
-                        <!-- OUTRO CURSO -->
-                        <div class="campoFormulario">
-                            <label for="outroCurso">
-                                Adicionar outro Curso
-                            </label>
-                            <select
-                                id="outroCurso"
-                                name="outroCurso"
-                            >
-                                <option value="">
-                                    Selecione um curso
-                                </option>
-                                <optgroup label="ETEC">
-                                    <option value="Desenvolvimento_Sistemas">
-                                        Desenvolvimento de Sistemas
-                                    </option>
-                                    <option value="Informática_Para_Internet">
-                                        Informática para a Internet
-                                    </option>
-                                    <option value="Informática">
-                                        Informática
-                                    </option>
-                                </optgroup>
-                                <optgroup label="FATEC">
-                                    <option value="ADS">
-                                        Análise e Desenvolvimento de Sistemas
-                                    </option>
-                                    <option value="BigData">
-                                        Big Data em Negócios
-                                    </option>
-                                    <option value="Desenvolvimento_Software_Multiplataforma">
-                                        Desenvolvimento de Software Multiplataforma
-                                    </option>
-                                    <option value="Banco_de_Dados">
-                                        Banco de Dados
-                                    </option>
-                                    <option value="Gestao_da_Tecnologia_da_Informacao">
-                                        Gestão da Tecnologia da Informação
-                                    </option>
-                                    <option value="JogosDigitais">
-                                        Jogos Digitais
-                                    </option>
-                                    <option value="Redes">
-                                        Redes de Computadores
-                                    </option>
-                                    <option value="Ciencia_de_Dados_para_Negocios">
-                                        Ciência de Dados para Negócios
-                                    </option>
-                                    <option value="Sistemas_para_Internet">
-                                        Sistemas para Internet
-                                    </option>
-                                </optgroup>
-                            </select>
-                        </div>
-
-                        <!-- MENSAGEM -->
-                        <p
-                            id="mensagemPerfil"
-                            role="status"
-                        ></p>
-
-                        <!-- SALVAR -->
-                        <div class="areaBotaoSalvar">
-                            <button
-                                type="submit"
-                                id="btnSalvar"
-                            >
-                                Salvar
-                            </button>
-                        </div>
-                    </form>
                 </div>
+
+
+                <form id="formEditarPerfil">
+
+                    <!-- NOME -->
+                    <div class="campoFormulario">
+
+                        <label for="nome">Nome completo</label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+                    <div class="campoFormulario">
+
+                        <label for="email">E-mail</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- ESTADO -->
+                    <div class="campoFormulario">
+
+                        <label for="estado">Estado</label>
+
+                        <select
+                            id="estado"
+                            name="estado"
+                            required
+                        >
+                            <option value="">Carregando estados...</option>
+                        </select>
+
+                    </div>
+
+
+                    <!-- CIDADE -->
+                    <div class="campoFormulario">
+
+                        <label for="cidade">Cidade</label>
+
+                        <select
+                            id="cidade"
+                            name="cidade"
+                            required
+                            disabled
+                        >
+                            <option value="">Selecione um estado primeiro</option>
+                        </select>
+
+                    </div>
+
+
+                    <!-- CURSO -->
+                    <div class="campoFormulario">
+
+                        <label for="curso">Curso</label>
+
+                        <select id="curso" name="curso" required>
+
+                            <option value="">
+                                Selecione seu curso
+                            </option>
+
+                            <optgroup label="ETEC">
+
+                                <option value="Desenvolvimento_Sistemas">
+                                    Desenvolvimento de Sistemas
+                                </option>
+
+                                <option value="Informática_Para_Internet">
+                                    Informática para a Internet
+                                </option>
+
+                                <option value="Informática">
+                                    Informática
+                                </option>
+
+                            </optgroup>
+
+                            <optgroup label="FATEC">
+
+                                <option value="ADS">
+                                    Análise e Desenvolvimento de Sistemas
+                                </option>
+
+                                <option value="BigData">
+                                    Big Data em Negócios
+                                </option>
+
+                                <option value="Desenvolvimento_Software_Multiplataforma">
+                                    Desenvolvimento de Software Multiplataforma
+                                </option>
+
+                                <option value="Banco_de_Dados">
+                                    Banco de Dados
+                                </option>
+
+                                <option value="Gestao_da_Tecnologia_da_Informacao">
+                                    Gestão da Tecnologia da Informação
+                                </option>
+
+                                <option value="JogosDigitais">
+                                    Jogos Digitais
+                                </option>
+
+                                <option value="Redes">
+                                    Redes de Computadores
+                                </option>
+
+                                <option value="Ciencia_de_Dados_para_Negocios">
+                                    Ciência de Dados para Negócios
+                                </option>
+
+                                <option value="Sistemas_para_Internet">
+                                    Sistemas para Internet
+                                </option>
+
+                            </optgroup>
+
+                        </select>
+
+                    </div>
+
+
+                    <p id="mensagemPerfil" role="status"></p>
+
+
+                    <div class="areaBotaoSalvar">
+
+                        <button type="submit" id="btnSalvar">
+                            Salvar alterações
+                        </button>
+
+                    </div>
+
+                </form>
+
             </section>
-        </div>
+
+            <!-- ALTERAR SENHA -->
+            <section id="viewAlterarSenha" class="conteudoEditar" hidden>
+
+                <div class="tituloEditar">
+
+                    <button
+                        type="button"
+                        id="btnVoltarSenha"
+                        aria-label="Voltar"
+                    >
+                        <svg viewBox="0 0 24 24">
+                            <path d="m15 18-6-6 6-6"/>
+                        </svg>
+                    </button>
+
+                    <div>
+                        <h1>Alterar senha</h1>
+                        <p>Atualize sua senha de acesso.</p>
+                    </div>
+
+                </div>
+
+                <form id="formAlterarSenha" class="formSenha">
+
+                    <div class="campoFormulario">
+                    <label for="senhaAtual">Senha atual</label>
+                    <div class="campoSenha">
+                        <input type="password" id="senhaAtual"
+                            autocomplete="current-password" required>
+
+                        <button type="button" class="btnVerSenha"
+                            aria-label="Mostrar senha" aria-pressed="false">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="campoFormulario">
+                    <label for="novaSenha">Nova senha</label>
+                    <div class="campoSenha">
+                        <input type="password" id="novaSenha"
+                            minlength="6" autocomplete="new-password" required>
+
+                        <button type="button" class="btnVerSenha"
+                            aria-label="Mostrar senha" aria-pressed="false">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="campoFormulario">
+                    <label for="confirmarSenha">Confirmar nova senha</label>
+                    <div class="campoSenha">
+                        <input type="password" id="confirmarSenha"
+                            minlength="6" autocomplete="new-password" required>
+
+                        <button type="button" class="btnVerSenha"
+                            aria-label="Mostrar senha" aria-pressed="false">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                    <p id="mensagemSenha" role="status"></p>
+
+                    <div class="areaBotaoSalvar">
+                        <button type="submit" id="btnSalvarSenha">
+                            Alterar senha
+                        </button>
+                    </div>
+
+                </form>
+
+            </section>
+
+        </section>
+
     </main>
 
-    <!-- =====================================
-         FOOTER EXISTENTE
-    ====================================== -->
     <site-footer></site-footer>
 
-    <!-- =====================================
-         COMPONENTES
-    ====================================== -->
-    <script src="/components/headercomponente.js"></script>
+
+    <!-- COMPONENTES -->
+    <script src="/components/navBar.js"></script>
     <script src="/components/footercomponente.js"></script>
 
-    <!-- =====================================
-         NAVEGAÇÃO ENTRE AS TELAS
-    ====================================== -->
-    <script>
-        const btnEditarPerfil =
-            document.getElementById("btnEditarPerfil");
-        const btnVoltarMaterias =
-            document.getElementById("btnVoltarMaterias");
-        const viewMaterias =
-            document.getElementById("viewMaterias");
-        const viewEditarPerfil =
-            document.getElementById("viewEditarPerfil");
+    <!-- NAVEGAÇÃO -->
+    <script src="/scripts/navegacao-perfil.js"></script>
 
-        // ABRIR EDIÇÃO
-        btnEditarPerfil.addEventListener("click", (event) => {
-            event.preventDefault();
-            viewMaterias.hidden = true;
-            viewEditarPerfil.hidden = false;
-            window.location.hash = "editar-perfil";
-        });
+    <!-- FIREBASE -->
+    <script type="module" src="/scripts/perfil.js"></script>
 
-        // VOLTAR PARA MATÉRIAS
-        btnVoltarMaterias.addEventListener("click", () => {
-            viewEditarPerfil.hidden = true;
-            viewMaterias.hidden = false;
-            history.replaceState(
-                null,
-                "",
-                window.location.pathname + window.location.search
-            );
-        });
-    </script>
-
-<!-- COMPONENTES EXISTENTES -->
-<script src="/components/headercomponente.js"></script>
-<script src="/components/footercomponente.js"></script>
- 
-<!-- NAVEGAÇÃO ENTRE TELAS -->
-<script src="/scripts/navegacao-perfil.js"></script>
- 
-<!-- FIREBASE E PERFIL -->
-<script type="module" src="/scripts/perfil.js"></script>
 </body>
 </html>

@@ -4,7 +4,10 @@ import {
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
     signOut,
-    updateProfile
+    updateProfile,
+    EmailAuthProvider,
+    reauthenticateWithCredential,
+    updatePassword
 } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
 
 import { app } from "./config.js";
@@ -56,6 +59,47 @@ export async function sairDaConta() {
 
     } catch (error) {
         console.error("Erro no logout:", error);
+        throw error;
+    }
+}
+
+// ALTERAR SENHA
+export async function alterarSenha(senhaAtual, novaSenha) {
+    try {
+        const usuario = auth.currentUser;
+
+        if (!usuario) {
+            throw new Error("Nenhum usuário autenticado.");
+        }
+
+        if (!usuario.email) {
+            throw new Error("E-mail do usuário não encontrado.");
+        }
+
+        // Criar credencial com e-mail e senha atual
+        const credencial = EmailAuthProvider.credential(
+            usuario.email,
+            senhaAtual
+        );
+
+        // Confirmar a identidade do usuário
+        await reauthenticateWithCredential(
+            usuario,
+            credencial
+        );
+
+        // Atualizar senha no Firebase Authentication
+        await updatePassword(
+            usuario,
+            novaSenha
+        );
+
+        console.log("Senha alterada com sucesso!");
+
+        return true;
+
+    } catch (error) {
+        console.error("Erro ao alterar senha:", error);
         throw error;
     }
 }
