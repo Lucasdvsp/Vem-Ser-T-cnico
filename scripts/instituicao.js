@@ -10,6 +10,8 @@ import {
 
 const fotoInstituicao = document.getElementById("fotoInstituicao");
 
+const nomeInstituicao = document.getElementById("nomeInstituicao");
+
 const sobreInstituicao = document.getElementById("sobreInstituicao");
 
 const linkInformacoesInstituicao = document.getElementById(
@@ -51,8 +53,12 @@ async function carregarInstituicao() {
         // Atualiza o título
         document.title = `Vem Ser Técnico - ${instituicao.nome}`;
 
+        // Nome da instituição
+        nomeInstituicao.textContent = instituicao.nome;
+
         // Sobre
-        sobreInstituicao.textContent = instituicao.sobre || "Informações não disponíveis.";
+        sobreInstituicao.textContent =
+            instituicao.sobre || "Informações não disponíveis.";
 
         // Foto
         if (instituicao.foto && instituicao.foto.trim() !== "") {
@@ -96,11 +102,6 @@ async function carregarInstituicao() {
 
 
 // =========================================
-// INICIALIZAÇÃO
-// =========================================
-
-carregarInstituicao();
-// =========================================
 // BOTÃO VOLTAR
 // =========================================
 
@@ -114,3 +115,10 @@ document.getElementById("btnVoltarInstituicao")
         }
 
     });
+
+
+// =========================================
+// INICIALIZAÇÃO
+// =========================================
+
+carregarInstituicao();

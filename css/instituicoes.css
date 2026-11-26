@@ -494,3 +494,8 @@ body {
         grid-auto-columns: 82%;
     }
 }
+
+.cardInstituicao.instituicaoDeInteresse h3 {
+    color: #c91f38;
+    font-weight: 700;
+}

@@ -5,6 +5,7 @@ import {
     setDoc,
     getDoc,
     deleteDoc,
+    deleteField,
     serverTimestamp
 } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
 
@@ -24,7 +25,6 @@ export async function cadastrarPerfil(uid, usuario) {
     }
 
     try {
-
         const referencia = doc(db, "usuarios", uid);
 
         await setDoc(referencia, {
@@ -38,11 +38,8 @@ export async function cadastrarPerfil(uid, usuario) {
         return true;
 
     } catch (error) {
-
         console.error("Erro ao cadastrar perfil:", error);
-
         throw error;
-
     }
 }
 
@@ -58,9 +55,7 @@ export async function buscarPerfil(uid) {
     }
 
     try {
-
         const referencia = doc(db, "usuarios", uid);
-
         const documento = await getDoc(referencia);
 
         if (!documento.exists()) {
@@ -70,18 +65,14 @@ export async function buscarPerfil(uid) {
         return documento.data();
 
     } catch (error) {
-
         console.error("Erro ao buscar perfil:", error);
-
         throw error;
-
     }
 }
 
 
 // =========================================
 // ATUALIZAR PERFIL
-// Preserva os campos não enviados
 // =========================================
 
 export async function atualizarPerfil(uid, dados) {
@@ -91,7 +82,6 @@ export async function atualizarPerfil(uid, dados) {
     }
 
     try {
-
         const referencia = doc(db, "usuarios", uid);
 
         await setDoc(referencia, {
@@ -106,11 +96,69 @@ export async function atualizarPerfil(uid, dados) {
         return true;
 
     } catch (error) {
-
         console.error("Erro ao atualizar perfil:", error);
-
         throw error;
+    }
+}
 
+
+// =========================================
+// BUSCAR INSTITUIÇÃO DE INTERESSE
+// =========================================
+
+export async function buscarInstituicaoInteresse(uid) {
+
+    if (!uid) {
+        throw new Error("UID do usuário não informado.");
+    }
+
+    try {
+        const referencia = doc(db, "usuarios", uid);
+        const documento = await getDoc(referencia);
+
+        if (!documento.exists()) {
+            return null;
+        }
+
+        return documento.data().instituicaoInteresse || null;
+
+    } catch (error) {
+        console.error("Erro ao buscar instituição de interesse:", error);
+        throw error;
+    }
+}
+
+
+// =========================================
+// SALVAR INSTITUIÇÃO DE INTERESSE
+// =========================================
+
+export async function salvarInstituicaoInteresse(uid, instituicaoId) {
+
+    if (!uid) {
+        throw new Error("UID do usuário não informado.");
+    }
+
+    try {
+        const referencia = doc(db, "usuarios", uid);
+
+        await setDoc(referencia, {
+            instituicaoInteresse: instituicaoId
+                ? instituicaoId
+                : deleteField(),
+
+            ultimaAtualizacao: serverTimestamp()
+        }, {
+            merge: true
+        });
+
+        console.log("Instituição de interesse salva com sucesso!");
+
+        return true;
+
+    } catch (error) {
+        console.error("Erro ao salvar instituição de interesse:", error);
+        throw error;
     }
 }
 
@@ -126,7 +174,6 @@ export async function excluirPerfil(uid) {
     }
 
     try {
-
         const referencia = doc(db, "usuarios", uid);
 
         await deleteDoc(referencia);
@@ -136,11 +183,8 @@ export async function excluirPerfil(uid) {
         return true;
 
     } catch (error) {
-
         console.error("Erro ao excluir perfil:", error);
-
         throw error;
-
     }
 }
 
@@ -160,7 +204,6 @@ export async function restaurarPerfil(uid, dados) {
     }
 
     try {
-
         const referencia = doc(db, "usuarios", uid);
 
         await setDoc(referencia, dados);
@@ -170,11 +213,8 @@ export async function restaurarPerfil(uid, dados) {
         return true;
 
     } catch (error) {
-
         console.error("Erro ao restaurar perfil:", error);
-
         throw error;
-
     }
 }
 

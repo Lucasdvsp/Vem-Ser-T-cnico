@@ -4,6 +4,17 @@ import {
     listarInstituicoesPorTipo
 } from "./api/instituicoesApi.js";
 
+import { app } from "./firebase/config.js";
+
+import {
+    getAuth,
+    onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
+
+import {
+    buscarInstituicaoInteresse
+} from "./firebase/database.js";
+
 
 // =========================================
 // ELEMENTOS DO HTML
@@ -20,7 +31,10 @@ const btnPesquisarInstituicao = document.getElementById("btnPesquisarInstituicao
 
 const mensagemInstituicoes = document.getElementById("mensagemInstituicoes");
 
+const auth = getAuth(app);
+
 let todasInstituicoes = [];
+let instituicaoInteresseId = null;
 
 
 // =========================================
@@ -48,6 +62,13 @@ function criarCardInstituicao(instituicao) {
 
     card.href = `instituicao.html?id=${encodeURIComponent(instituicao.id)}`;
     card.classList.add("cardInstituicao");
+
+    // Identificação da instituição de interesse
+    card.dataset.instituicaoId = instituicao.id;
+
+    if (instituicao.id === instituicaoInteresseId) {
+        card.classList.add("instituicaoDeInteresse");
+    }
 
     // Área da imagem
     const areaImagem = document.createElement("div");
@@ -87,6 +108,7 @@ function criarCardInstituicao(instituicao) {
 
     return card;
 }
+
 
 // =========================================
 // RENDERIZAÇÃO DAS INSTITUIÇÕES
@@ -234,6 +256,57 @@ function configurarCarrosseis() {
 
 
 // =========================================
+// INSTITUIÇÃO DE INTERESSE
+// =========================================
+
+function atualizarDestaqueInstituicao() {
+
+    document.querySelectorAll(".cardInstituicao").forEach(card => {
+
+        const corresponde =
+            card.dataset.instituicaoId === instituicaoInteresseId;
+
+        card.classList.toggle(
+            "instituicaoDeInteresse",
+            corresponde
+        );
+
+    });
+}
+
+
+function observarInstituicaoInteresse() {
+
+    onAuthStateChanged(auth, async usuario => {
+
+        instituicaoInteresseId = null;
+
+        atualizarDestaqueInstituicao();
+
+        if (!usuario) return;
+
+        try {
+
+            instituicaoInteresseId = await buscarInstituicaoInteresse(
+                usuario.uid
+            );
+
+            atualizarDestaqueInstituicao();
+
+        } catch (erro) {
+
+            console.error(
+                "Erro ao buscar instituição de interesse:",
+                erro
+            );
+
+        }
+
+    });
+}
+
+
+// =========================================
 // INICIALIZAÇÃO
 // =========================================
 
@@ -248,6 +321,8 @@ async function inicializarInstituicoes() {
         renderizarInstituicoes(todasInstituicoes);
 
         configurarCarrosseis();
+
+        observarInstituicaoInteresse();
 
     } catch (erro) {
 
