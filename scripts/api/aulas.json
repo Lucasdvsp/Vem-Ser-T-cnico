@@ -1,37 +1,330 @@
 [
     {
-        "nomeAula": "Lógica de Programação - Resumo",
-        "linkAula": "https://youtu.be/XzkZO2qjgec",
-        "descAula": "Resumo dos conceitos fundamentais de lógica de programação.",
+        "nomeAula": "Onde está o Mundo 4 de Python? - Guia Definitivo de POO para Iniciantes",
+        "linkAula": "https://www.youtube.com/watch?v=Mim6nnkdOto",
+        "descAula": "Apresentação do Mundo 4 do curso de Python e introdução à Programação Orientada a Objetos.",
         "completoAula": false,
-        "idMateria": "prog"
+        "idMateria": "POO",
+        "nomeMateria": "Programação Orientada a Objetos"
     },
     {
-        "nomeAula": "Playlist - Algoritmos e Lógica de Programação",
-        "linkAula": "https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV",
-        "descAula": "Playlist completa sobre algoritmos e lógica de programação.",
+        "nomeAula": "Crise do Software: O motivo do surgimento da POO - Aula 01",
+        "linkAula": "https://www.youtube.com/watch?v=fjLL4dKqw6U",
+        "descAula": "A crise do software e os problemas que levaram ao surgimento da Programação Orientada a Objetos.",
         "completoAula": false,
-        "idMateria": "prog"
+        "idMateria": "POO",
+        "nomeMateria": "Programação Orientada a Objetos"
     },
     {
-        "nomeAula": "Playlist - Portugol",
-        "linkAula": "https://www.youtube.com/playlist?list=PL8vn1Rt-MINYatt7pRnEOdBn_I2ahXZxW",
-        "descAula": "Playlist de introdução à linguagem Portugol.",
+        "nomeAula": "As 6 Vantagens da POO - Aula 02",
+        "linkAula": "https://www.youtube.com/watch?v=3mw-2iu4kIc",
+        "descAula": "As principais vantagens de programar de forma orientada a objetos.",
         "completoAula": false,
-        "idMateria": "prog"
+        "idMateria": "POO",
+        "nomeMateria": "Programação Orientada a Objetos"
     },
     {
-        "nomeAula": "Condicionais - Resumo",
-        "linkAula": "https://www.youtube.com/watch?v=K10u3XIf1-Q",
-        "descAula": "Resumo sobre estruturas condicionais (se, senão).",
+        "nomeAula": "POO para Iniciantes: Classes, Objetos, Atributos - Aula 03",
+        "linkAula": "https://www.youtube.com/watch?v=BQsv_BkoBCU",
+        "descAula": "Conceitos básicos de POO: classes, objetos e atributos.",
         "completoAula": false,
-        "idMateria": "prog"
+        "idMateria": "POO",
+        "nomeMateria": "Programação Orientada a Objetos"
     },
     {
-        "nomeAula": "Estrutura de Repetição",
-        "linkAula": "https://youtu.be/WdaWoxTiWnU",
-        "descAula": "Como funcionam os laços de repetição (para, enquanto).",
+        "nomeAula": "PyCharm mudou! Treinando Python no PC, celular e tablet",
+        "linkAula": "https://www.youtube.com/watch?v=XND4VeMMzqg",
+        "descAula": "Como configurar o PyCharm e praticar Python em diferentes dispositivos.",
         "completoAula": false,
-        "idMateria": "prog"
+        "idMateria": "POO",
+        "nomeMateria": "Programação Orientada a Objetos"
+    },
+    {
+        "nomeAula": "Criando Classes e Objetos na Prática - Aula 04",
+        "linkAula": "https://www.youtube.com/watch?v=dJyZmwLpxnE",
+        "descAula": "Primeira prática de criação de classes e objetos em Python.",
+        "completoAula": false,
+        "idMateria": "POO",
+        "nomeMateria": "Programação Orientada a Objetos"
+    },
+    {
+        "nomeAula": "Rich no Python: Cores, Emojis, Tabelas e Debug - Aula Extra",
+        "linkAula": "https://www.youtube.com/watch?v=djLwj8oDT_s",
+        "descAula": "Uso da biblioteca Rich para deixar a saída do terminal mais bonita.",
+        "completoAula": false,
+        "idMateria": "POO",
+        "nomeMateria": "Programação Orientada a Objetos"
+    },
+    {
+        "nomeAula": "Sistema de Análise de Churrasco com Python - Desafio 18",
+        "linkAula": "https://www.youtube.com/watch?v=UVKRqqhR6l0",
+        "descAula": "Desafio prático de POO: sistema de análise de churrasco.",
+        "completoAula": false,
+        "idMateria": "POO",
+        "nomeMateria": "Programação Orientada a Objetos"
+    },
+    {
+        "nomeAula": "Livro com Validação de Limite de Páginas - Desafio 19",
+        "linkAula": "https://www.youtube.com/watch?v=HBNjlFCxPgg",
+        "descAula": "Desafio prático: classe Livro com validação do limite de páginas.",
+        "completoAula": false,
+        "idMateria": "POO",
+        "nomeMateria": "Programação Orientada a Objetos"
+    },
+    {
+        "nomeAula": "Caneta que escreve colorido em Python - Desafio 21",
+        "linkAula": "https://www.youtube.com/watch?v=i0VEsMtv76U",
+        "descAula": "Desafio prático: classe Caneta com cores.",
+        "completoAula": false,
+        "idMateria": "POO",
+        "nomeMateria": "Programação Orientada a Objetos"
+    },
+    {
+        "nomeAula": "Controle Remoto em Python - Desafio 22",
+        "linkAula": "https://www.youtube.com/watch?v=F7cQTFzvsfE",
+        "descAula": "Desafio prático: modelando um controle remoto com classes.",
+        "completoAula": false,
+        "idMateria": "POO",
+        "nomeMateria": "Programação Orientada a Objetos"
+    },
+    {
+        "nomeAula": "Herança em Python - Aula 7",
+        "linkAula": "https://www.youtube.com/watch?v=wZT-nuBMW7o",
+        "descAula": "Herança em POO: reaproveitamento de código entre classes.",
+        "completoAula": false,
+        "idMateria": "POO",
+        "nomeMateria": "Programação Orientada a Objetos"
+    },
+    {
+        "nomeAula": "Abstração: Pilar Central da POO - Aula 8",
+        "linkAula": "https://www.youtube.com/watch?v=XNHNYO7Dt9Q",
+        "descAula": "Abstração como um dos pilares da Programação Orientada a Objetos.",
+        "completoAula": false,
+        "idMateria": "POO",
+        "nomeMateria": "Programação Orientada a Objetos"
+    },
+    {
+        "nomeAula": "O que vamos aprender no módulo 01?",
+        "linkAula": "https://www.youtube.com/watch?v=jgQjeqGRdgA",
+        "descAula": "Visão geral dos principais tópicos do primeiro módulo do curso de HTML5 e CSS3.",
+        "completoAula": false,
+        "idMateria": "web",
+        "nomeMateria": "Programação Web (HTML, CSS)"
+    },
+    {
+        "nomeAula": "Front-end, Back-end e Full stack",
+        "linkAula": "https://www.youtube.com/watch?v=iSqf2iPqJNM",
+        "descAula": "Introdução ao desenvolvimento web: definição de front-end, back-end e full stack.",
+        "completoAula": false,
+        "idMateria": "web",
+        "nomeMateria": "Programação Web (HTML, CSS)"
+    },
+    {
+        "nomeAula": "Melhores livros para aprender HTML5 e CSS3",
+        "linkAula": "https://www.youtube.com/watch?v=0zLjVhHdOm8",
+        "descAula": "Indicações de livros para estudar HTML, CSS e design.",
+        "completoAula": false,
+        "idMateria": "web",
+        "nomeMateria": "Programação Web (HTML, CSS)"
+    },
+    {
+        "nomeAula": "Fim do Módulo 1: Certificados liberados",
+        "linkAula": "https://www.youtube.com/watch?v=xYLizixflv4",
+        "descAula": "Encerramento do Módulo 1 do curso de HTML5 e CSS3 e informações sobre certificados.",
+        "completoAula": false,
+        "idMateria": "web",
+        "nomeMateria": "Programação Web (HTML, CSS)"
+    },
+    {
+        "nomeAula": "Será que este curso é para mim?",
+        "linkAula": "https://www.youtube.com/watch?v=57wyfS560Uk",
+        "descAula": "Avalia o perfil do aluno e o formato do Módulo 1 do curso de HTML5 e CSS3.",
+        "completoAula": false,
+        "idMateria": "web",
+        "nomeMateria": "Programação Web (HTML, CSS)"
+    },
+    {
+        "nomeAula": "A diferença entre HTML, CSS e JavaScript",
+        "linkAula": "https://www.youtube.com/watch?v=B4FU3NFRTDw",
+        "descAula": "Explica o papel de HTML, CSS e JavaScript no desenvolvimento web.",
+        "completoAula": false,
+        "idMateria": "web",
+        "nomeMateria": "Programação Web (HTML, CSS)"
+    },
+    {
+        "nomeAula": "Seu primeiro código HTML",
+        "linkAula": "https://www.youtube.com/watch?v=E6CdIawPTh0",
+        "descAula": "Estrutura básica de um documento HTML5 e primeiro exercício prático.",
+        "completoAula": false,
+        "idMateria": "web",
+        "nomeMateria": "Programação Web (HTML, CSS)"
+    },
+    {
+        "nomeAula": "Parágrafos e Quebras",
+        "linkAula": "https://www.youtube.com/watch?v=f6NTJdtEFOc",
+        "descAula": "Uso de parágrafos, quebras de linha e caracteres especiais em HTML5.",
+        "completoAula": false,
+        "idMateria": "web",
+        "nomeMateria": "Programação Web (HTML, CSS)"
+    },
+    {
+        "nomeAula": "Símbolos e Emoji no seu site",
+        "linkAula": "https://www.youtube.com/watch?v=nhMdFe3WwYc",
+        "descAula": "Inserção de entidades HTML, símbolos especiais e emojis na página.",
+        "completoAula": false,
+        "idMateria": "web",
+        "nomeMateria": "Programação Web (HTML, CSS)"
+    },
+    {
+        "nomeAula": "Você tem o direito de usar qualquer imagem no seu site?",
+        "linkAula": "https://www.youtube.com/watch?v=bDULqeGEvAw",
+        "descAula": "Direitos autorais e licenças de uso de imagens para projetos web.",
+        "completoAula": false,
+        "idMateria": "web",
+        "nomeMateria": "Programação Web (HTML, CSS)"
+    },
+    {
+        "nomeAula": "Quais são os formatos para imagens na Web?",
+        "linkAula": "https://www.youtube.com/watch?v=xg-vHgLF0mI",
+        "descAula": "Comparação entre formatos de imagem e boas práticas de uso na web.",
+        "completoAula": false,
+        "idMateria": "web",
+        "nomeMateria": "Programação Web (HTML, CSS)"
+    },
+    {
+        "nomeAula": "Formatações adicionais em HTML",
+        "linkAula": "https://www.youtube.com/watch?v=8TgKFYkcO5Y",
+        "descAula": "Marca-texto, texto deletado ou inserido, sobrescrito e subscrito em HTML.",
+        "completoAula": false,
+        "idMateria": "web",
+        "nomeMateria": "Programação Web (HTML, CSS)"
+    },
+    {
+        "nomeAula": "Listas OL e UL",
+        "linkAula": "https://www.youtube.com/watch?v=JlE0pzESf5g",
+        "descAula": "Criação e personalização de listas ordenadas e não ordenadas em HTML5.",
+        "completoAula": false,
+        "idMateria": "web",
+        "nomeMateria": "Programação Web (HTML, CSS)"
+    },
+    {
+        "nomeAula": "Links e Âncoras em HTML5",
+        "linkAula": "https://www.youtube.com/watch?v=LeOVXQDsAIY",
+        "descAula": "Criação de links externos e internos com atributos href, target e rel.",
+        "completoAula": false,
+        "idMateria": "web",
+        "nomeMateria": "Programação Web (HTML, CSS)"
+    },
+    {
+        "nomeAula": "Estilos CSS inline",
+        "linkAula": "https://www.youtube.com/watch?v=byqhpuVpvEI",
+        "descAula": "Aplicação de estilos CSS diretamente nas tags HTML e suas limitações.",
+        "completoAula": false,
+        "idMateria": "web",
+        "nomeMateria": "Programação Web (HTML, CSS)"
+    },
+    {
+        "nomeAula": "Estilos CSS internos",
+        "linkAula": "https://www.youtube.com/watch?v=fzyab4P2pn8",
+        "descAula": "Uso de estilos internos no cabeçalho do documento e seletores CSS básicos.",
+        "completoAula": false,
+        "idMateria": "web",
+        "nomeMateria": "Programação Web (HTML, CSS)"
+    },
+    {
+        "nomeAula": "Primeiros passos no React Native - Aula 1 | Curso React Native (aprendiz) | Onebitcode",
+        "linkAula": "https://www.youtube.com/watch?v=Y8tP1jbRYHY",
+        "descAula": "Introdução ao desenvolvimento mobile com JavaScript e React Native no curso Aprendiz.",
+        "completoAula": false,
+        "idMateria": "mobile",
+        "nomeMateria": "Programação Mobile (React-Native)"
+    },
+    {
+        "nomeAula": "Principais Components do React Native - Aula 2 - Parte 1 | Curso React Native (aprendiz)",
+        "linkAula": "https://www.youtube.com/watch?v=_N6-kScr-Ig",
+        "descAula": "Primeira parte sobre os principais componentes nativos utilizados no React Native.",
+        "completoAula": false,
+        "idMateria": "mobile",
+        "nomeMateria": "Programação Mobile (React-Native)"
+    },
+    {
+        "nomeAula": "Principais Components do React Native - Aula 2 - Parte 2 | Curso React Native (aprendiz)",
+        "linkAula": "https://www.youtube.com/watch?v=u_qccnftxXQ",
+        "descAula": "Segunda parte sobre componentes e estrutura de interface no React Native.",
+        "completoAula": false,
+        "idMateria": "mobile",
+        "nomeMateria": "Programação Mobile (React-Native)"
+    },
+    {
+        "nomeAula": "Principais Components do React Native - Aula 2 - Parte 3 | Curso React Native (aprendiz)",
+        "linkAula": "https://www.youtube.com/watch?v=8X63GfvxbE8",
+        "descAula": "Terceira parte sobre componentes essenciais e interação em aplicações React Native.",
+        "completoAula": false,
+        "idMateria": "mobile",
+        "nomeMateria": "Programação Mobile (React-Native)"
+    },
+    {
+        "nomeAula": "Design do App OneBitHealth – Aula 3 - Parte 1 | Curso React Native (aprendiz)",
+        "linkAula": "https://www.youtube.com/watch?v=JusFvRHWDyU",
+        "descAula": "Criação do layout e interface do aplicativo OneBitHealth em React Native.",
+        "completoAula": false,
+        "idMateria": "mobile",
+        "nomeMateria": "Programação Mobile (React-Native)"
+    },
+    {
+        "nomeAula": "Conhecendo sobre APIs React Native - Aula 4 - Parte 1 | Curso React Native (aprendiz)",
+        "linkAula": "https://www.youtube.com/watch?v=wl0h3fMaIWc",
+        "descAula": "Fundamentos de consumo de APIs e dados externos em aplicações React Native.",
+        "completoAula": false,
+        "idMateria": "mobile",
+        "nomeMateria": "Programação Mobile (React-Native)"
+    },
+    {
+        "nomeAula": "Conhecendo sobre APIs React Native - Aula 4 - Parte 2 | Curso React Native (aprendiz)",
+        "linkAula": "https://www.youtube.com/watch?v=5dzD1ZqJhi4",
+        "descAula": "Continuação do consumo de APIs e integração de dados no React Native.",
+        "completoAula": false,
+        "idMateria": "mobile",
+        "nomeMateria": "Programação Mobile (React-Native)"
+    },
+    {
+        "nomeAula": "Trabalhando com Câmera no React Native - Aula 6 - Parte 1 | Curso React Native (aprendiz)",
+        "linkAula": "https://www.youtube.com/watch?v=99diO-41iWU",
+        "descAula": "Uso da câmera do dispositivo e permissões em projetos React Native.",
+        "completoAula": false,
+        "idMateria": "mobile",
+        "nomeMateria": "Programação Mobile (React-Native)"
+    },
+    {
+        "nomeAula": "Navegação (StackNavigator, TabNavigator e Drawer) - Aula 7 - Parte 2 | Curso React Native (aprendiz)",
+        "linkAula": "https://www.youtube.com/watch?v=RGp5xdidde8",
+        "descAula": "Configuração de rotas e navegação entre telas no React Native.",
+        "completoAula": false,
+        "idMateria": "mobile",
+        "nomeMateria": "Programação Mobile (React-Native)"
+    },
+    {
+        "nomeAula": "Navegação (StackNavigator, TabNavigator e Drawer) - Aula 7 - Parte 3 | Curso React Native (aprendiz)",
+        "linkAula": "https://www.youtube.com/watch?v=ah25k0Ib7vw",
+        "descAula": "Continuação de navegação com StackNavigator, TabNavigator e Drawer.",
+        "completoAula": false,
+        "idMateria": "mobile",
+        "nomeMateria": "Programação Mobile (React-Native)"
+    },
+    {
+        "nomeAula": "Projeto Final: OneBitCoin - Aula 8 - Parte 4 | Curso React Native (aprendiz)",
+        "linkAula": "https://www.youtube.com/watch?v=-b5FREKBHXg",
+        "descAula": "Etapa do projeto prático OneBitCoin no curso de React Native.",
+        "completoAula": false,
+        "idMateria": "mobile",
+        "nomeMateria": "Programação Mobile (React-Native)"
+    },
+    {
+        "nomeAula": "Curso de C# e .NET 8: Guia Completo do Básico ao Avançado | Aula #0",
+        "linkAula": "https://youtu.be/XNrG_l308AY?si=mAFf67sRWslU3ndi",
+        "descAula": "Neste vídeo de introdução, vamos apresentar o que você pode esperar ao longo do curso, que cobre desde os fundamentos do C# até os tópicos mais avançados no .NET 8. Abordaremos a estrutura do curso, os principais conceitos e ferramentas que vamos utilizar, e como este curso pode ajudar você a se tornar um desenvolvedor mais eficiente e preparado para o mercado.",
+        "completoAula": false,
+        "idMateria": "algoritmos",
+        "nomeMateria": "Programação e Algoritmos"
     }
 ]

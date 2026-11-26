@@ -1,0 +1,317 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#telaExercicios {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+/* =========================================
+   CONTEÚDO PRINCIPAL
+========================================= */
+
+.conteudoExercicios {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 40px 52px 70px;
+    flex: 1;
+}
+
+.cabecalhoExercicios {
+    margin-bottom: 28px;
+}
+
+.cabecalhoExercicios h1 {
+    font-size: 28px;
+    color: #111;
+    margin-bottom: 6px;
+}
+
+.cabecalhoExercicios p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* =========================================
+   PESQUISA E FILTROS
+========================================= */
+
+.areaControlesExercicios {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 36px;
+}
+
+.barraPesquisaExercicios {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #a5a5a5;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 2px 4px #00000020;
+    overflow: hidden;
+}
+
+.barraPesquisaExercicios input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    padding: 0 24px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color: #222;
+}
+
+.barraPesquisaExercicios input::placeholder {
+    color: #555;
+    opacity: 1;
+}
+
+.barraPesquisaExercicios button {
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #111;
+}
+
+.barraPesquisaExercicios button svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+}
+
+.barraPesquisaExercicios button:hover {
+    color: #bd2035;
+}
+
+.filtroMaterias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btnMateria {
+    padding: 9px 16px;
+    border-radius: 999px;
+    border: 1px solid #d0d0d0;
+    background: #fff;
+    color: #222;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.btnMateria:hover {
+    border-color: #bd2035;
+    color: #bd2035;
+}
+
+.btnMateria.ativo {
+    background: #bd2035;
+    border-color: #bd2035;
+    color: #fff;
+}
+
+/* =========================================
+   SEÇÕES E CARDS DE EXERCÍCIOS
+========================================= */
+
+.secaoMateriaExercicios {
+    margin-bottom: 40px;
+}
+
+.tituloSecaoExercicios {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.tituloSecaoExercicios h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111;
+}
+
+.contadorExercicios {
+    font-size: 14px;
+    color: #666;
+}
+
+.gradeExercicios {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.cardExercicio {
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+    padding: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.cardExercicio:hover {
+    transform: translateY(-2px);
+    border-color: #bd2035;
+}
+
+.cardExercicio.concluido {
+    border-color: #2e7d32;
+    background: #f8fcf8;
+}
+
+.topoCardExercicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.badgeDificuldade {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: #f5f5f5;
+    color: #333;
+}
+
+.statusExercicio {
+    font-size: 12px;
+    font-weight: 700;
+    color: #666;
+}
+
+.cardExercicio.concluido .statusExercicio {
+    color: #2e7d32;
+}
+
+.cardExercicio h3 {
+    font-size: 18px;
+    color: #111;
+}
+
+.enunciadoExercicio {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.acoesExercicio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: auto;
+    padding-top: 6px;
+}
+
+.btnSecundario,
+.btnConcluir {
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btnSecundario {
+    border: 1px solid #c5c5c5;
+    background: #fff;
+    color: #222;
+}
+
+.btnSecundario:hover {
+    border-color: #111;
+}
+
+.btnConcluir {
+    border: none;
+    background: #bd2035;
+    color: #fff;
+}
+
+.btnConcluir:hover {
+    background: #981829;
+}
+
+.dicaExercicio {
+    font-size: 14px;
+    line-height: 1.45;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: #fff6f7;
+    border-left: 3px solid #bd2035;
+    color: #333;
+}
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 900px) {
+    .gradeExercicios {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .conteudoExercicios {
+        padding: 32px 24px 50px;
+    }
+
+    .cabecalhoExercicios h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 520px) {
+    .conteudoExercicios {
+        padding: 24px 18px 40px;
+    }
+
+    .barraPesquisaExercicios {
+        height: 44px;
+        border-radius: 9px;
+    }
+}

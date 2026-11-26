@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -10,87 +9,78 @@
 
     <link rel="stylesheet" href="/css/navBarPlataforma.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/exercicios.css">
 </head>
 
 <body>
 
+    <main id="telaExercicios">
 
-<main id="telaExercicios">
+        <!-- NAVBAR -->
+        <nav-bar></nav-bar>
 
-    <!-- NAVBAR -->
-    <nav-bar></nav-bar>
+        <!-- CONTEÚDO -->
+        <div class="conteudoExercicios">
 
-    <!-- BANNER -->
-    <section id="bannerHome">
-        <img
-            src="/asssets/BannerExercicios.png"
-            alt="Banner de boas-vindas ao Vem Ser Técnico"
-        >
-    </section>
+            <header class="cabecalhoExercicios">
+                <h1>Exercícios</h1>
+                <p>Pratique os conteúdos separados por matéria.</p>
+            </header>
 
-    <!-- CONTEÚDO -->
-    <div class="conteudoHome">
+            <!-- PESQUISA E FILTRO DE MATÉRIA -->
+            <section class="areaControlesExercicios" aria-label="Filtros de exercícios">
 
-        <!-- PESQUISA E FILTROS -->
-        <section id="ferramentasHome">
-
-            <div class="barraPesquisa">
-                <input
-                    type="search"
-                    id="pesquisaHome"
-                    placeholder="Pesquisar"
-                    aria-label="Pesquisar conteúdos"
-                >
-
-                <button type="button" aria-label="Pesquisar">
-                    <span>⌕</span>
-                </button>
-            </div>
-
-            <div class="parteFiltro">
-                <div  class="titleFiltro">
-                    <p>MATÉRIAS</p>
-                </div>
-                <div class="filtrosHome">
-                    
-                    <button type="button" class="filtroAtivo">
-                        Técnicas
-                    </button>
-
-                    <button type="button">
-                        Escolares
+                <div class="barraPesquisaExercicios">
+                    <input
+                        type="search"
+                        id="pesquisaExercicios"
+                        placeholder="Pesquisar exercício"
+                        aria-label="Pesquisar exercícios"
+                    >
+                    <button
+                        type="button"
+                        id="btnPesquisarExercicio"
+                        aria-label="Pesquisar"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="10.8" cy="10.8" r="7.5"></circle>
+                            <path d="m16.3 16.3 5 5"></path>
+                        </svg>
                     </button>
                 </div>
-            </div>
 
-        </section>
+                <div class="filtroMaterias" id="filtroMaterias" role="tablist" aria-label="Filtrar por matéria">
+                    <button type="button" class="btnMateria ativo" data-materia="todas">
+                        Todas
+                    </button>
+                </div>
 
-        <!-- SEÇÕES DE CONTEÚDO -->
-        <section class="secaoHome" id="secaoAulas">
-            <h2>AULAS</h2>
-            <div class="listaCards"></div>
-        </section>
+            </section>
 
-        <section class="secaoHome" id="secaoExercicios">
-            <h2>EXERCÍCIOS</h2>
-            <div class="listaCards"></div>
-        </section>
+            <!-- MENSAGEM DE ESTADO -->
+            <p
+                id="mensagemExercicios"
+                role="status"
+                aria-live="polite"
+                hidden
+            ></p>
 
-        <section class="secaoHome" id="secaoSimulados">
-            <h2>SIMULADOS</h2>
-            <div class="listaCards"></div>
-        </section>
+            <!-- SEÇÕES SEPARADAS POR MATÉRIA -->
+            <div id="listaSecoesExercicios"></div>
 
-    </div>
+        </div>
 
-    <!-- FOOTER -->
-    <site-footer></site-footer>
+        <!-- FOOTER -->
+        <site-footer></site-footer>
 
-</main>
+    </main>
 
-<script src="/components/navBar.js"></script>
-<script src="/components/footercomponente.js"></script>
+    <!-- COMPONENTES -->
+    <script src="/components/navBar.js"></script>
+    <script src="/components/footercomponente.js"></script>
+
+    <!-- FUNCIONALIDADE -->
+    <script type="module" src="/scripts/exercicios.js"></script>
 
 </body>
 </html>

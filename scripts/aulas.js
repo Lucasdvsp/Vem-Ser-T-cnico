@@ -2,6 +2,14 @@ import { listarAulas } from "/scripts/api/aulasApi.js";
 
 
 // =========================================
+// CONFIGURAÇÃO
+// =========================================
+
+// Critério de separação das seções: "materia" ou "categoria"
+const AGRUPAR_POR = "materia";
+
+
+// =========================================
 // ELEMENTOS DO HTML
 // =========================================
 
@@ -84,10 +92,10 @@ function criarCardAula(aula) {
 
 
 // =========================================
-// CRIAÇÃO DAS SEÇÕES (UMA POR CATEGORIA)
+// CRIAÇÃO DAS SEÇÕES (UMA POR GRUPO)
 // =========================================
 
-function criarSecaoCategoria(nomeCategoria, aulas) {
+function criarSecao(nomeSecao, aulas) {
 
     const secao = document.createElement("section");
     secao.classList.add("secaoAulas");
@@ -116,7 +124,7 @@ function criarSecaoCategoria(nomeCategoria, aulas) {
         </div>
     `;
 
-    secao.querySelector("h2").textContent = nomeCategoria.toUpperCase();
+    secao.querySelector("h2").textContent = nomeSecao.toUpperCase();
 
     const lista = secao.querySelector(".listaAulas");
 
@@ -132,21 +140,27 @@ function criarSecaoCategoria(nomeCategoria, aulas) {
 // RENDERIZAÇÃO
 // =========================================
 
+function obterNomeGrupo(aula) {
+    return aula[AGRUPAR_POR] || "Outras aulas";
+}
+
 function renderizarAulas(aulas) {
 
     listaCategorias.innerHTML = "";
 
-    // Agrupa por categoria mantendo a ordem do JSON
+    // Agrupa mantendo a ordem do JSON
     const grupos = new Map();
 
     aulas.forEach(aula => {
-        if (!grupos.has(aula.categoria)) grupos.set(aula.categoria, []);
-        grupos.get(aula.categoria).push(aula);
+        const grupo = obterNomeGrupo(aula);
+
+        if (!grupos.has(grupo)) grupos.set(grupo, []);
+        grupos.get(grupo).push(aula);
     });
 
-    grupos.forEach((aulasDoGrupo, categoria) => {
+    grupos.forEach((aulasDoGrupo, nomeGrupo) => {
         listaCategorias.appendChild(
-            criarSecaoCategoria(categoria, aulasDoGrupo)
+            criarSecao(nomeGrupo, aulasDoGrupo)
         );
     });
 
@@ -163,7 +177,7 @@ function renderizarAulas(aulas) {
 // =========================================
 
 function normalizar(texto) {
-    return texto
+    return String(texto || "")
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "")
         .toLocaleLowerCase("pt-BR");
@@ -181,8 +195,9 @@ function pesquisarAulas() {
     const resultado = todasAulas.filter(aula =>
         normalizar(aula.nome).includes(termo) ||
         normalizar(aula.descricao).includes(termo) ||
+        normalizar(aula.materia).includes(termo) ||
         normalizar(aula.categoria).includes(termo) ||
-        normalizar(aula.playlist || "").includes(termo)
+        normalizar(aula.playlist).includes(termo)
     );
 
     renderizarAulas(resultado);

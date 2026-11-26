@@ -5,8 +5,11 @@
 // JSON estático do site (caminho absoluto a partir da raiz)
 const URL_AULAS = "/scripts/api/aulas.json";
 
+// Chave = idMateria usado no aulas.json
 export const MATERIAS = {
-    prog: "Técnicas de Programação e Algoritmos"
+    algoritmos: "Programação e Algoritmos",
+    POO:  "Programação Orientada a Objetos",
+    web:  "Programação Web (HTML, CSS)"
 };
 
 export const CATEGORIAS = {
@@ -60,7 +63,11 @@ function montarAula(dados) {
         descricao: dados.descAula || "",
         completo: Boolean(dados.completoAula),
         idMateria: dados.idMateria,
-        materia: MATERIAS[dados.idMateria] || dados.idMateria || "",
+        materia:
+            MATERIAS[dados.idMateria] ||
+            dados.nomeMateria ||
+            dados.idMateria ||
+            "Outras aulas",
         idCategoria: dados.idCategoria,
         categoria: CATEGORIAS[dados.idCategoria] || "Outras aulas",
         playlist: dados.playlist || null,
@@ -129,6 +136,11 @@ async function carregarAulas() {
 
 export async function listarAulas() {
     return carregarAulas();
+}
+
+export async function listarAulasPorMateria(idMateria) {
+    const aulas = await carregarAulas();
+    return aulas.filter(aula => aula.idMateria === idMateria);
 }
 
 export async function listarAulasPorCategoria(idCategoria) {
