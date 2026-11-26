@@ -12,11 +12,11 @@ Projeto Interdisciplinar desenvolvido na Escola Técnica Estadual de Taboão da 
 - O projeto "Vem Ser Técnico" se trata de um software com o objetivo de facilitar o acesso ao ensino superior e médio técnico, sobretudo nas instituições do Centro Paula Souza (CPS), sendo elas as ETECs e FATECs, em busca de democratizar o acesso à formação e informação sobre os cursos e suas matérias técnicas, preparando seus usuários para o dia a dia do curso.
   
 ## ⚙️ Funcionalidades
-- Questionários
-- Aulas remotas
+- Questionários [em desenvolvimento]
+- Aulas remotas [em desenvolvimento]
 - Autenticação de Usuários
 - Conexão com Banco de Dados
-- Medições de desempenho
+- Listagem de Unidades (Etecs e Fatecs) e suas principais informações para o vestibulando 
   
 ## 🎨 Layout / Demonstração
 - Logo principal
