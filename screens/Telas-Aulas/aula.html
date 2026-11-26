@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vem Ser Técnico - Aula</title>
+
+    <link rel="stylesheet" href="/css/navBarPlataforma.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/aula.css">
+</head>
+
+<body>
+
+    <main id="telaAula">
+
+        <!-- NAVBAR -->
+        <nav-bar></nav-bar>
+
+        <!-- CONTEÚDO -->
+        <div class="conteudoAula">
+
+            <!-- VOLTAR -->
+            <button
+                type="button"
+                id="btnVoltarAula"
+                aria-label="Voltar"
+            >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m15 18-6-6 6-6"/>
+                </svg>
+            </button>
+
+            <!-- VÍDEO (fica na plataforma) -->
+            <section class="playerAula">
+                <iframe
+                    id="playerAula"
+                    title="Vídeo da aula"
+                    allow="accelerometer; encrypted-media; picture-in-picture; fullscreen"
+                    allowfullscreen
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    hidden
+                ></iframe>
+            </section>
+
+            <!-- TÍTULO -->
+            <h1 id="tituloAula" class="tituloAula"></h1>
+
+            <!-- RESUMO -->
+            <section class="resumoAula">
+                <h2>Resumo</h2>
+
+                <p>
+                    <span id="textoResumo"></span>
+                    <button type="button" id="btnVerMais" hidden>Ver Mais</button>
+                </p>
+            </section>
+
+            <!-- MENSAGEM DE ESTADO -->
+            <p
+                id="mensagemAula"
+                role="status"
+                aria-live="polite"
+                hidden
+            ></p>
+
+        </div>
+
+        <!-- FOOTER -->
+        <site-footer></site-footer>
+
+    </main>
+
+    <!-- COMPONENTES -->
+    <script src="/components/navBar.js"></script>
+    <script src="/components/footercomponente.js"></script>
+
+    <!-- FUNCIONALIDADE -->
+    <script type="module" src="/scripts/aula.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vem Ser Técnico - Aulas</title>
+
+    <link rel="stylesheet" href="/css/navBarPlataforma.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/aulas.css">
+</head>
+
+<body>
+
+    <main id="telaAulas">
+
+        <!-- NAVBAR -->
+        <nav-bar></nav-bar>
+
+        <!-- BANNER -->
+        <section class="bannerAulas">
+            <img
+                src="/asssets/BannerAulas.png"
+                alt="Banner de boas-vindas ao Vem Ser Técnico"
+            >
+        </section>
+
+        <!-- CONTEÚDO -->
+        <div class="conteudoAulas">
+
+            <!-- PESQUISA -->
+            <section class="areaPesquisa">
+                <div class="barraPesquisaAulas">
+
+                    <input
+                        type="search"
+                        id="pesquisaAulas"
+                        placeholder="Pesquisar aula"
+                        aria-label="Pesquisar aulas"
+                    >
+
+                    <button
+                        type="button"
+                        id="btnPesquisarAula"
+                        aria-label="Pesquisar"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="10.8" cy="10.8" r="7.5"></circle>
+                            <path d="m16.3 16.3 5 5"></path>
+                        </svg>
+                    </button>
+
+                </div>
+            </section>
+
+            <!-- MENSAGEM DE ESTADO -->
+            <p
+                id="mensagemAulas"
+                role="status"
+                aria-live="polite"
+                hidden
+            ></p>
+
+            <!-- SEÇÕES POR CATEGORIA (GERADAS PELA API) -->
+            <div id="listaCategorias"></div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <site-footer></site-footer>
+
+    </main>
+
+    <!-- COMPONENTES -->
+    <script src="/components/navBar.js"></script>
+    <script src="/components/footercomponente.js"></script>
+
+    <!-- API E FUNCIONALIDADES DAS AULAS -->
+    <script type="module" src="/scripts/aulas.js"></script>
+
+</body>
+</html>

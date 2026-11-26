@@ -1,0 +1,37 @@
+[
+    {
+        "nomeAula": "Lógica de Programação - Resumo",
+        "linkAula": "https://youtu.be/XzkZO2qjgec",
+        "descAula": "Resumo dos conceitos fundamentais de lógica de programação.",
+        "completoAula": false,
+        "idMateria": "prog"
+    },
+    {
+        "nomeAula": "Playlist - Algoritmos e Lógica de Programação",
+        "linkAula": "https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV",
+        "descAula": "Playlist completa sobre algoritmos e lógica de programação.",
+        "completoAula": false,
+        "idMateria": "prog"
+    },
+    {
+        "nomeAula": "Playlist - Portugol",
+        "linkAula": "https://www.youtube.com/playlist?list=PL8vn1Rt-MINYatt7pRnEOdBn_I2ahXZxW",
+        "descAula": "Playlist de introdução à linguagem Portugol.",
+        "completoAula": false,
+        "idMateria": "prog"
+    },
+    {
+        "nomeAula": "Condicionais - Resumo",
+        "linkAula": "https://www.youtube.com/watch?v=K10u3XIf1-Q",
+        "descAula": "Resumo sobre estruturas condicionais (se, senão).",
+        "completoAula": false,
+        "idMateria": "prog"
+    },
+    {
+        "nomeAula": "Estrutura de Repetição",
+        "linkAula": "https://youtu.be/WdaWoxTiWnU",
+        "descAula": "Como funcionam os laços de repetição (para, enquanto).",
+        "completoAula": false,
+        "idMateria": "prog"
+    }
+]
