@@ -1,3 +1,6 @@
+# NOTA!!!!!!!!!!!!!!!!1
+- A entrega final será feita no dia 26/11, com um dia de atraso, essa entrega é a versão beta.
+
 # Vem-Ser-Técnico
 Projeto Interdisciplinar desenvolvido na Escola Técnica Estadual de Taboão da Serra - 2026
 
