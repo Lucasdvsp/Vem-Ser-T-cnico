@@ -10,87 +10,153 @@
 
     <link rel="stylesheet" href="/css/navBarPlataforma.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/instituicoes.css">
 </head>
 
 <body>
 
+    <main id="telaInstituicoes">
 
-<main id="telaInstituicoes">
+        <!-- NAVBAR -->
+        <nav-bar></nav-bar>
 
-    <!-- NAVBAR -->
-    <nav-bar></nav-bar>
+        <!-- BANNER -->
+        <section class="bannerInstituicoes">
+            <img
+                src="/asssets/BannerInstituicoes.png"
+                alt="Materiais escolares sobre uma superfície vermelha"
+            >
+        </section>
 
-    <!-- BANNER -->
-    <section id="bannerHome">
-        <img
-            src="/asssets/BannerInstituicoes.png"
-            alt="Banner de boas-vindas ao Vem Ser Técnico"
-        >
-    </section>
+        <!-- CONTEÚDO -->
+        <div class="conteudoInstituicoes">
 
-    <!-- CONTEÚDO -->
-    <div class="conteudoHome">
+            <!-- PESQUISA -->
+            <section class="areaPesquisa">
 
-        <!-- PESQUISA E FILTROS -->
-        <section id="ferramentasHome">
+                <div class="barraPesquisaInstituicoes">
 
-            <div class="barraPesquisa">
-                <input
-                    type="search"
-                    id="pesquisaHome"
-                    placeholder="Pesquisar"
-                    aria-label="Pesquisar conteúdos"
-                >
+                    <input
+                        type="search"
+                        id="pesquisaInstituicoes"
+                        placeholder="Pesquisar instituição"
+                        aria-label="Pesquisar instituições"
+                    >
 
-                <button type="button" aria-label="Pesquisar">
-                    <span>⌕</span>
-                </button>
-            </div>
-
-            <div class="parteFiltro">
-                <div  class="titleFiltro">
-                    <p>MATÉRIAS</p>
-                </div>
-                <div class="filtrosHome">
-                    
-                    <button type="button" class="filtroAtivo">
-                        Técnicas
+                    <button
+                        type="button"
+                        id="btnPesquisarInstituicao"
+                        aria-label="Pesquisar"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="10.8" cy="10.8" r="7.5"></circle>
+                            <path d="m16.3 16.3 5 5"></path>
+                        </svg>
                     </button>
 
-                    <button type="button">
-                        Escolares
-                    </button>
                 </div>
-            </div>
 
-        </section>
+            </section>
 
-        <!-- SEÇÕES DE CONTEÚDO -->
-        <section class="secaoHome" id="secaoAulas">
-            <h2>AULAS</h2>
-            <div class="listaCards"></div>
-        </section>
+            <!-- MENSAGEM DE ESTADO -->
+            <p
+                id="mensagemInstituicoes"
+                role="status"
+                aria-live="polite"
+                hidden
+            ></p>
 
-        <section class="secaoHome" id="secaoExercicios">
-            <h2>EXERCÍCIOS</h2>
-            <div class="listaCards"></div>
-        </section>
+            <!-- FATECS -->
+            <section class="secaoInstituicoes" id="secaoFatecs">
 
-        <section class="secaoHome" id="secaoSimulados">
-            <h2>SIMULADOS</h2>
-            <div class="listaCards"></div>
-        </section>
+                <div class="tituloSecaoInstituicoes">
+                    <h2>FATECs</h2>
+                </div>
 
-    </div>
+                <div class="carrosselInstituicoes">
 
-    <!-- FOOTER -->
-    <site-footer></site-footer>
+                    <button
+                        class="setaCarrossel setaAnterior"
+                        type="button"
+                        aria-label="Instituições anteriores"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="m15 18-6-6 6-6"></path>
+                        </svg>
+                    </button>
 
-</main>
+                    <!-- CARDS GERADOS PELA API -->
+                    <div
+                        class="listaInstituicoes"
+                        id="listaFatecs"
+                    ></div>
 
-<script src="/components/navBar.js"></script>
-<script src="/components/footercomponente.js"></script>
+                    <button
+                        class="setaCarrossel setaProxima"
+                        type="button"
+                        aria-label="Próximas instituições"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- ETECS -->
+            <section class="secaoInstituicoes" id="secaoEtecs">
+
+                <div class="tituloSecaoInstituicoes">
+                    <h2>ETECs</h2>
+                </div>
+
+                <div class="carrosselInstituicoes">
+
+                    <button
+                        class="setaCarrossel setaAnterior"
+                        type="button"
+                        aria-label="Instituições anteriores"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="m15 18-6-6 6-6"></path>
+                        </svg>
+                    </button>
+
+                    <!-- CARDS GERADOS PELA API -->
+                    <div
+                        class="listaInstituicoes"
+                        id="listaEtecs"
+                    ></div>
+
+                    <button
+                        class="setaCarrossel setaProxima"
+                        type="button"
+                        aria-label="Próximas instituições"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </button>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- FOOTER -->
+        <site-footer></site-footer>
+
+    </main>
+
+    <!-- COMPONENTES -->
+    <script src="/components/navBar.js"></script>
+    <script src="/components/footercomponente.js"></script>
+
+    <!-- API E FUNCIONALIDADES DAS INSTITUIÇÕES -->
+    <script type="module" src="/scripts/instituicoes.js"></script>
 
 </body>
 </html>

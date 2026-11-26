@@ -1,0 +1,236 @@
+
+/* =================================
+   CONFIGURAÇÕES GERAIS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =================================
+   ESTRUTURA PRINCIPAL
+================================= */
+
+#telaInstituicao {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.conteudoInstituicao {
+    flex: 1;
+    width: 100%;
+    padding: 35px 5% 60px;
+}
+
+
+/* =================================
+   FOTO DA INSTITUIÇÃO
+================================= */
+
+.fotoInstituicao {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.fotoInstituicao img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    aspect-ratio: 16 / 5;
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 4px;
+}
+
+
+/* =================================
+   SEÇÕES
+================================= */
+
+.secaoInstituicao {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.secaoInstituicao h2 {
+    margin-bottom: 15px;
+
+    color: #a90000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.conteudoSecaoInstituicao {
+    width: 100%;
+    padding: 22px 25px;
+
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.conteudoSecaoInstituicao p {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =================================
+   LINK DE INFORMAÇÕES
+================================= */
+
+#linkInformacoesInstituicao {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: #c91f38;
+    font-size: 14px;
+    font-weight: bold;
+
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+#linkInformacoesInstituicao:hover {
+    color: #a90000;
+    text-decoration: underline;
+}
+
+
+/* =================================
+   MENSAGENS
+================================= */
+
+#mensagemInstituicao {
+    margin: 20px 0;
+
+    color: #a90000;
+    font-size: 14px;
+}
+
+
+/* =================================
+   RESPONSIVIDADE
+================================= */
+
+@media (max-width: 768px) {
+
+    .conteudoInstituicao {
+        padding: 25px 4% 45px;
+    }
+
+    .fotoInstituicao {
+        margin-bottom: 28px;
+    }
+
+    .fotoInstituicao img {
+        aspect-ratio: 16 / 7;
+    }
+
+    .secaoInstituicao {
+        margin-bottom: 28px;
+    }
+
+    .secaoInstituicao h2 {
+        font-size: 17px;
+    }
+
+    .conteudoSecaoInstituicao {
+        padding: 18px;
+    }
+
+    .conteudoSecaoInstituicao p {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .conteudoInstituicao {
+        padding: 20px 4% 35px;
+    }
+
+    .fotoInstituicao img {
+        aspect-ratio: 4 / 3;
+    }
+
+    .conteudoSecaoInstituicao {
+        padding: 15px;
+    }
+
+}
+
+
+/* =================================
+   NAVBAR
+================================= */
+
+nav-bar {
+    display: block;
+    width: 100%;
+    flex: 0 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+.navBarPlataforma {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+
+/* =================================
+   HIDDEN
+================================= */
+
+[hidden] {
+    display: none !important;
+}
+
+/* =================================
+   BOTÃO VOLTAR
+================================= */
+
+#btnVoltarInstituicao {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 22px;
+    padding: 9px 16px;
+
+    background-color: white;
+    color: #a90000;
+
+    border: 1px solid #a90000;
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#btnVoltarInstituicao:hover {
+    background-color: #a90000;
+    color: white;
+}
+
+#btnVoltarInstituicao span {
+    font-size: 18px;
+    line-height: 1;
+}

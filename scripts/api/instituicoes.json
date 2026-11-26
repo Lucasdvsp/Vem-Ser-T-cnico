@@ -1,0 +1,147 @@
+
+[
+    {
+        "id": "etec-taboao",
+        "nome": "Etec de Taboão da Serra",
+        "tipo": "ETEC",
+        "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxPpsaKfqDTEzAh0fVLVt1WSBurFSkBL-aPMrQAcTCadS-HbtlwBm4AP4&s=10",
+        "sobre": "A Etec de Taboão da Serra, implementada em 2018, é uma das instituições destaques do Centro Paula Souza (CPS). Figurando entre as 10 melhores escolas públicas do Estado de São Paulo, a Etec de Taboão da Serra se destaca por sua participação em olimpíadas de tecnologia, tendo vencido por duas vezes consecutivas a Olimpíada Nacional de Desenvolvimento de Aplicativos (ONDA) da UERGS e por sua participação em eventos como a Olimpíada Brasileira de Tecnologia (OBT) e a Feira Tecnológica do Centro Paula Souza (FETEPS). A instituição é uma excelente opção para quem quer o curso de desenvolvimento de sistemas. Tel: (11) 4245-2600",
+        "informacoes": "https://etects.cps.sp.gov.br/"        
+    },
+    {
+        "id": "etec-orlandia",
+        "nome": "ETEC Professor Alcídio de Souza Prado",
+        "tipo": "ETEC",
+        "foto": "https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/10/Orla%CC%82ndia-Etec-Prof.-Alci%CC%81dio-de-Souza-Prado-FOTO-FACHADA-ETEC-2021_2-e1643222478109.jpeg",
+        "sobre": "A Etec foi integrada ao Centro Paula Souza em 1994. Tel: (16) 3826-0774 / 3826-2313. Email: Superintendência: e025dir@cps.sp.gov.br | Chefe de Serviço Administrativo e Financeiro: e025adm@cps.sp.gov.br | Chefe de Serviço Acadêmico: e025acad@cps.sp.gov.br",
+        "informacoes": "https://www.cps.sp.gov.br/etecs/etec-prof-alcidio-de-souza-prado/"
+    },
+    {
+        "id": "fatec-franca",
+        "nome": "Fatec Dr. Thomaz Novelino",
+        "tipo": "FATEC",
+        "foto": "https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/10/Fatec-Franca-Dr.-Thomaz-Novelino-WhatsApp-Image-2022-01-19-at-15.36.26.jpeg",
+        "sobre": "A Fatec iniciou suas atividades no 2º semestre de 2008. Tel:(16) 3702-3204. Emails: Superintendente: f109dir@cps.sp.gov.br | Chefe de Serviço Administrativo e Financeiro: f109adm@cps.sp.gov.br | Chefe de Serviço Acadêmico: f109acad@cps.sp.gov.br",
+        "informacoes": "https://www.cps.sp.gov.br/fatecs/fatec-franca-dr-thomaz-novelino/"
+    },
+    {
+        "id": "fatec-sorocaba",
+        "nome": "Fatec Sorocaba – José Crespo Gonzales",
+        "tipo": "FATEC",
+        "foto": "https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/10/fatec-sorocaba.jpg",
+        "sobre": "A Fatec foi implantada no 1º semestre de 1971. Tel: (15) 3238-5266 / 3228-2366 / 3228-2370. Emails: Superintendente: f003dir@cps.sp.gov.br | Chefe de Serviço Administrativo e Financeiro: f003adm@cps.sp.gov.br | Chefe de Serviço Acadêmico: f003acad@cps.sp.gov.br",
+        "informacoes": "https://www.cps.sp.gov.br/fatecs/fatec-sorocaba-jose-crespo-gonzales/"
+    },
+    {
+        "id": "fatec-itu",
+        "nome": "Fatec Itu – Dom Amaury Castanho",
+        "tipo": "FATEC",
+        "foto": "https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/10/fatec-itu.jpg",
+        "sobre": "A Fatec iniciou suas atividades em 2008. Tel: (11) 4813-9303. Email: Superintendente: f178dir@cps.sp.gov.br | Chefe de Serviço Administrativo e Financeiro: f178adm@cps.sp.gov.br | Chefe de Serviço Acadêmico: f178acad@cps.sp.gov.br",
+        "informacoes": "https://www.cps.sp.gov.br/fatecs/fatec-itu-dom-amaury-castanho/"
+    },
+    {
+        "id": "fatec-itapetininga",
+        "nome": "Fatec Itapetininga – Prof. Antonio Belizandro Barbosa Rezende",
+        "tipo": "FATEC",
+        "foto": "https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/10/Fatec-21.jpg",
+        "sobre": "A Fatec foi implantada no 1º semestre de 2006. Tel: (15) 3272-7916 / 3272-1165. Email: Superintendente: f131dir@cps.sp.gov.br | Chefe de Serviço Administrativo e Financeiro: f131adm@cps.sp.gov.br | Chefe de Serviço Acadêmico: f131acad@cps.sp.gov.br",
+        "informacoes": "https://www.cps.sp.gov.br/fatecs/fatec-itapetininga-prof-antonio-belizandro-barbosa-rezende/"
+    },
+    {
+        "id": "fatec-botucatu",
+        "nome": "Fatec Botucatu",
+        "tipo": "FATEC",
+        "foto": "https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/10/Fatec-Botucatu-scaled.jpeg",
+        "sobre": "A Fatec foi implantada em 2002. Tel: (14) 3811-7400. Email: Superintendente: f112dir@cps.sp.gov.br | Chefe de Serviço Administrativo e Financeiro: f112adm@cps.sp.gov.br | Chefe de Serviço Acadêmico: f112acad@cps.sp.gov.br",
+        "informacoes": "https://www.cps.sp.gov.br/fatecs/fatec-botucatu/"
+    },
+    {
+        "id": "fatec-sao-jose-dos-campos",
+        "nome": "Fatec São José dos Campos – Prof. Jessen Vidal",
+        "tipo": "FATEC",
+        "foto": "https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/10/fatec-sao-jose-dos-campos.jpg",
+        "sobre": "A Fatec foi implantada no 1º semestre de 2006. Tel: (12) 3905-4979 / 3905-2423. Email: Superintendente: f146dir@cps.sp.gov.br | Chefe de Serviço Administrativo e Financeiro: f146adm@cps.sp.gov.br | Chefe de Serviço Acadêmico: f146acad@cps.sp.gov.br",
+        "informacoes": "https://www.cps.sp.gov.br/fatecs/fatec-sao-jose-dos-campos-prof-jessen-vidal/"
+    },
+    {
+        "id": "fatec-taubate",
+        "nome": "Fatec Taubaté",
+        "tipo": "FATEC",
+        "foto": "https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/10/DSC00036.jpg",
+        "sobre": ". Tel: (12) 3602-2708 / 3602-2709. Email: Superintendente: f251dir@cps.sp.gov.br | Chefe de Serviço Administrativo e Financeiro: f251adm@cps.sp.gov.br | Chefe de Serviço Acadêmico: f251acad@cps.sp.gov.br",
+        "informacoes": "https://www.cps.sp.gov.br/fatecs/fatec-taubate/"
+    },
+    {
+        "id": "etec-abdias",
+        "nome": "Etec Abdias do Nascimento",
+        "tipo": "ETEC",
+        "foto": "https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/10/Capital-Etec-Abdias-do-Nascimento.jpeg",
+        "sobre": "A Etec foi implantada no 1º semestre de 2010. Tel: (11) 3507-7491. Email: Superintendencia: e224dir@cps.sp.gov.br | Chefe de Serviço Administrativo e Financeiro: e224adm@cps.sp.gov.br | Chefe de Serviço Acadêmico: e224acad@cps.sp.gov.br",
+        "informacoes": "https://www.cps.sp.gov.br/etecs/etec-abdias-do-nascimento-paraisopolis/"
+    },
+    {
+        "id": "etec-parque-da-juventude",
+        "nome": "Etec Parque da Juventude",
+        "tipo": "ETEC",
+        "foto": "https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/10/etec-pq-da-juventude.jpg",
+        "sobre": "A Etec foi implantada em 2007. Tel: (11) 2221-0098 / 2221-0086. Email: Superintendencia: e159dir@cps.sp.gov.br | Chefe de Serviço Administrativo e Financeiro: e159adm@cps.sp.gov.br | Chefe de Serviço Acadêmico: e159acad@cps.sp.gov.br",
+        "informacoes": "https://www.cps.sp.gov.br/etecs/etec-parque-da-juventude-santana/"
+    },
+    {
+        "id": "etec-jaragua",
+        "nome": "Etec Jaraguá",
+        "tipo": "ETEC",
+        "foto": "https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/10/etec-jaragua.jpg",
+        "sobre": "A Etec foi implantada no 1º semestre de 2010. Tel: (11) 3941-7242 / 3941-8319. Email: Superintendencia: e228dir@cps.sp.gov.br | Chefe de Serviço Administrativo e Financeiro: e228adm@cps.sp.gov.br | Chefe de Serviço Acadêmico: e228acad@cps.sp.gov.br",
+        "informacoes": "https://www.cps.sp.gov.br/etecs/etec-jaragua-jaragua/"
+    },
+    {
+        "id": "etec-de-vila-formosa",
+        "nome": "Etec de Vila Formosa",
+        "tipo": "ETEC",
+        "foto": "https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/145/2022/12/119648216_3412338725493488_683795175999235414_n.jpg",
+        "sobre": "A Etec foi implantada em 2008. Tel: (11) 2301-6600. Email: Superintendencia: e185dir@cps.sp.gov.br | Chefe de Serviço Administrativo e Financeiro: e185adm@cps.sp.gov.br | Chefe de Serviço Acadêmico: e185acad@cps.sp.gov.br",
+        "informacoes": "https://www.cps.sp.gov.br/etecs/etec-de-vila-formosa-vila-formosa/"
+    },
+    {
+        "id": "etec-basilides",
+        "nome": "Etec Prof. Basílides de Godoy",
+        "tipo": "ETEC",
+        "foto": "https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/10/Etec-Prof-Basilides-de-Godoy-scaled.jpg",
+        "sobre": "A Etec foi integrada ao Centro Paula Souza em 1994. Tel: (11) 3834-4111 / 3834-4780. Email: Superintendencia: e041dir@cps.sp.gov.br | Chefe de Serviço Administrativo e Financeiro: e041adm@cps.sp.gov.br | Chefe de Serviço Acadêmico: e041acad@cps.sp.gov.br",
+        "informacoes": "https://www.cps.sp.gov.br/etecs/etec-prof-basilides-de-godoy-vila-leopoldina/"
+    },
+    {
+        "id": "etec-rio-claro",
+        "nome": "Etec Prof. Armando Bayeux da Silva",
+        "tipo": "ETEC",
+        "foto": "https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/10/etec-rio-claro-armando-baeyux.jpg",
+        "sobre": "A Etec foi integrada ao Centro Paula Souza em 1994. Tel: (19) 3524-2330 / 3534-1688. Email: Superintendencia: e036dir@cps.sp.gov.br | Chefe de Serviço Administrativo e Financeiro: e036adm@cps.sp.gov.br | Chefe de Serviço Acadêmico: e036acad@cps.sp.gov.br",
+        "informacoes": "https://www.cps.sp.gov.br/etecs/etec-prof-armando-bayeux-da-silva/"
+    },
+    {
+        "id": "etec-sebrae",
+        "nome": "Etec Sebrae",
+        "tipo": "ETEC",
+        "foto": "https://sp.agenciasebrae.com.br/wp-content/uploads/sites/25/2023/11/53322065092_d20362c4d0_k.jpg",
+        "sobre": "A Etec foi implantada em 2014. Tel: (11) 3224-0889. Email: Superintendencia: e273dir@cps.sp.gov.br | Chefe de Serviço Administrativo e Financeiro: e273adm@cps.sp.gov.br | Chefe de Serviço Acadêmico: e273acad@cps.sp.gov.br",
+        "informacoes": "https://www.cps.sp.gov.br/etecs/etec-sebrae-campos-eliseos/"
+    },
+    {
+        "id": "etec-embu",
+        "nome": "Etec de Embu",
+        "tipo": "ETEC",
+        "foto": "https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/10/etec-embu.jpg",
+        "sobre": "A Etec foi implantada no 2º semestre de 2010. Tel: (11) 4785-4900. Email: Superintendencia: e241dir@cps.sp.gov.br | Chefe de Serviço Administrativo e Financeiro: e241adm@cps.sp.gov.br | Chefe de Serviço Acadêmico: e241acad@cps.sp.gov.br",
+        "informacoes": "https://www.cps.sp.gov.br/etecs/etec-de-embu/"
+    },
+    {
+        "id": "",
+        "nome": "",
+        "tipo": "",
+        "foto": "",
+        "sobre": "",
+        "informacoes": ""
+    }
+]

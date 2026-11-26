@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vem Ser Técnico - Instituição</title>
+
+    <link rel="stylesheet" href="/css/navBarPlataforma.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/instituicao.css">
+</head>
+
+<body>
+
+    <main id="telaInstituicao">
+
+        <!-- NAVBAR -->
+        <nav-bar></nav-bar>
+
+        <!-- CONTEÚDO -->
+        <div class="conteudoInstituicao">
+
+            <!-- VOLTAR -->
+            <button type="button" id="btnVoltarInstituicao">
+                <span aria-hidden="true">←</span>
+                Voltar
+            </button>
+            <!-- FOTO DA INSTITUIÇÃO -->
+            <section class="fotoInstituicao">
+                <img
+                    id="fotoInstituicao"
+                    src=""
+                    alt="Foto da instituição"
+                    hidden
+                >
+            </section>
+
+            <!-- SOBRE -->
+            <section class="secaoInstituicao">
+
+                <h2>Sobre</h2>
+
+                <div class="conteudoSecaoInstituicao">
+                    <p id="sobreInstituicao"></p>
+                </div>
+
+            </section>
+
+            <!-- INFORMAÇÕES -->
+            <section class="secaoInstituicao">
+
+                <h2>Informações</h2>
+
+                <div class="conteudoSecaoInstituicao">
+
+                    <p>
+                        Acesse o site oficial da instituição para consultar
+                        informações adicionais e conhecer os cursos oferecidos.
+                    </p>
+
+                    <a
+                        id="linkInformacoesInstituicao"
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Acessar site da instituição
+                    </a>
+
+                </div>
+
+            </section>
+
+            <!-- MENSAGEM DE ERRO -->
+            <p
+                id="mensagemInstituicao"
+                role="status"
+                aria-live="polite"
+                hidden
+            ></p>
+
+        </div>
+
+        <!-- FOOTER -->
+        <site-footer></site-footer>
+
+    </main>
+
+    <!-- COMPONENTES -->
+    <script src="/components/navBar.js"></script>
+    <script src="/components/footercomponente.js"></script>
+
+    <!-- FUNCIONALIDADE -->
+    <script type="module" src="/scripts/instituicao.js"></script>
+
+</body>
+</html>
