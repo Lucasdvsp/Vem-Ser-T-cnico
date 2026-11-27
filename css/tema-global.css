@@ -1,0 +1,50 @@
+/* /css/tema-global.css */
+html.fonte-pequena body,
+body.fonte-pequena {
+    zoom: 0.9;
+}
+
+html.fonte-media body,
+body.fonte-media {
+    zoom: 1;
+}
+
+html.fonte-grande body,
+body.fonte-grande {
+    zoom: 1.15;
+}
+
+body.tema-escuro {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+body.tema-escuro h1,
+body.tema-escuro h2,
+body.tema-escuro h3,
+body.tema-escuro h4,
+body.tema-escuro p,
+body.tema-escuro span,
+body.tema-escuro a,
+body.tema-escuro label,
+body.tema-escuro li,
+body.tema-escuro td,
+body.tema-escuro th {
+    color: #f5f5f5;
+}
+
+body.tema-escuro section,
+body.tema-escuro main,
+body.tema-escuro aside,
+body.tema-escuro .conteudoHome,
+body.tema-escuro .secaoHome {
+    background-color: transparent;
+}
+
+body.tema-escuro input,
+body.tema-escuro select,
+body.tema-escuro textarea {
+    background-color: #242424;
+    color: #f5f5f5;
+    border-color: #444;
+}

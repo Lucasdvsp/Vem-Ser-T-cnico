@@ -1,0 +1,153 @@
+.blocoPdfSimulado {
+    margin-bottom: 32px;
+}
+
+.tituloSecaoPdf {
+    font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #111111;
+    margin-bottom: 12px;
+}
+
+.carrosselPdfWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.listaCardsPdf {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 4px 2px;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.listaCardsPdf::-webkit-scrollbar {
+    display: none;
+}
+
+.cardPdfItem {
+    flex: 0 0 185px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease;
+}
+
+.cardPdfItem:hover {
+    transform: translateY(-2px);
+}
+
+.cardPdfBox {
+    background-color: #f6ced2;
+    border-radius: 10px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    min-height: 46px;
+}
+
+.cardPdfLabel {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #1f1f1f;
+    white-space: nowrap;
+}
+
+.cardPdfIcone {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    color: #b91c28;
+    flex-shrink: 0;
+}
+
+.cardPdfSubtitulo {
+    margin-top: 6px;
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: #222222;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.setaCarrosselPdf {
+    background: transparent;
+    border: none;
+    color: #c81e2b;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 6px 8px;
+    user-select: none;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.setaCarrosselPdf:hover {
+    color: #96121c;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+    .blocoPdfSimulado {
+        margin-bottom: 26px;
+    }
+
+    .cardPdfItem {
+        flex: 0 0 165px;
+    }
+
+    .listaCardsPdf {
+        gap: 12px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    .blocoPdfSimulado {
+        margin-bottom: 22px;
+    }
+
+    .cardPdfItem {
+        flex: 0 0 148px;
+    }
+
+    .cardPdfBox {
+        padding: 10px 11px;
+        min-height: 42px;
+        border-radius: 8px;
+    }
+
+    .cardPdfLabel {
+        font-size: 0.78rem;
+    }
+
+    .cardPdfIcone {
+        width: 19px;
+        height: 19px;
+    }
+
+    .cardPdfSubtitulo {
+        font-size: 0.75rem;
+    }
+
+    .setaCarrosselPdf {
+        font-size: 1.25rem;
+        padding: 4px;
+    }
+}

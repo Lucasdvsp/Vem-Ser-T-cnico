@@ -35,7 +35,6 @@ a {
     color: inherit;
 }
 
-
 /* =========================================
    NAVBAR
 ========================================= */
@@ -47,7 +46,6 @@ nav-bar {
     z-index: 10;
 }
 
-
 /* =========================================
    LAYOUT PRINCIPAL
 ========================================= */
@@ -55,11 +53,9 @@ nav-bar {
 .telaPerfil {
     display: flex;
     align-items: stretch;
-
     width: 100%;
     min-height: calc(100vh - 80px);
 }
-
 
 /* =========================================
    SIDEBAR
@@ -68,18 +64,13 @@ nav-bar {
 .lateralPerfil {
     width: 300px;
     min-width: 300px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     padding: 45px 28px 35px;
-
     border-right: 1px solid #e7a1ac;
-
     background: #fff;
 }
-
 
 /* =========================================
    FOTO
@@ -88,23 +79,18 @@ nav-bar {
 .fotoPerfil {
     width: 190px;
     height: 190px;
-
     margin-bottom: 25px;
-
     border-radius: 50%;
     overflow: hidden;
-
     background: #bd2035;
 }
 
 .fotoPerfil img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
     display: block;
 }
-
 
 /* =========================================
    DADOS DO USUÁRIO
@@ -112,41 +98,31 @@ nav-bar {
 
 .dadosPerfil {
     width: 100%;
-
     text-align: center;
-
     margin-bottom: 55px;
 }
 
 .dadosPerfil h2 {
     font-size: 21px;
     font-weight: 400;
-
     line-height: 1.35;
-
     margin-bottom: 5px;
-
     overflow-wrap: anywhere;
 }
 
 .dadosPerfil p {
     font-size: 15px;
     color: #555;
-
     margin-bottom: 30px;
-
     overflow-wrap: anywhere;
 }
 
 .dadosPerfil span {
     display: block;
-
     font-size: 18px;
     line-height: 1.4;
-
     overflow-wrap: anywhere;
 }
-
 
 /* =========================================
    MENU
@@ -155,69 +131,39 @@ nav-bar {
 .menuPerfil {
     display: flex;
     flex-direction: column;
-
     width: 100%;
     gap: 12px;
-
     margin-top: auto;
 }
-
-
-/* =========================================
-   LINKS
-========================================= */
 
 .menuPerfil a {
     display: flex;
     align-items: center;
-
     gap: 12px;
-
     width: 100%;
-
     padding: 8px 5px;
-
     color: #111;
-
     font-size: 17px;
     font-weight: 400;
-
     border-radius: 7px;
-
-    transition:
-        background 0.2s ease,
-        transform 0.2s ease;
+    transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .menuPerfil a:hover {
     background: #f5f5f5;
-
     transform: translateX(3px);
 }
-
-
-/* =========================================
-   ÍCONES
-========================================= */
 
 .menuPerfil svg {
     width: 23px;
     height: 23px;
-
     flex-shrink: 0;
-
-    stroke: #000;
+    stroke: currentColor;
     fill: none;
-
     stroke-width: 2.6;
     stroke-linecap: round;
     stroke-linejoin: round;
 }
-
-
-/* =========================================
-   EXCLUIR CONTA
-========================================= */
 
 .menuPerfil .excluirConta {
     color: #d9233b;
@@ -227,32 +173,21 @@ nav-bar {
     stroke: #d9233b;
 }
 
-
 /* =========================================
    ÁREA PRINCIPAL
 ========================================= */
 
 .areaPrincipal {
     flex: 1;
-
     min-width: 0;
-
     padding: 40px 5%;
-
     background: #fff;
-
     overflow: hidden;
 }
-
-
-/* =========================================
-   VIEW MATÉRIAS
-========================================= */
 
 .conteudoMaterias {
     width: 100%;
 }
-
 
 /* =========================================
    INSTITUIÇÃO
@@ -262,11 +197,8 @@ nav-bar {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-
     gap: 30px;
-
     width: 100%;
-
     margin-bottom: 85px;
 }
 
@@ -276,47 +208,32 @@ nav-bar {
 
 .instituicao h1 {
     color: #bd2035;
-
     font-size: 28px;
     font-weight: 700;
-
     margin-bottom: 15px;
 }
 
 #instituicaoInteresse {
     width: min(440px, 100%);
     height: 43px;
-
     padding: 0 15px;
-
     border: none;
     border-radius: 10px;
-
     background: #ffe5e9;
-
     font-size: 16px;
     color: #111;
-
     outline: none;
 }
-
-
-/* =========================================
-   LOGO
-========================================= */
 
 .logoPerfil {
     width: 200px;
     max-width: 30%;
-
     height: auto;
-
     object-fit: contain;
 }
 
-
 /* =========================================
-   TÍTULO MATÉRIAS
+   MATÉRIAS
 ========================================= */
 
 .cabecalhoMaterias {
@@ -325,69 +242,202 @@ nav-bar {
 
 .cabecalhoMaterias h2 {
     color: #bd2035;
-
     font-size: 27px;
     font-weight: 700;
 }
 
-
-/* =========================================
-   SEÇÕES
-========================================= */
-
 .secaoMaterias {
     width: 100%;
-
     margin-bottom: 30px;
 }
 
 .secaoMaterias h3 {
     font-size: 20px;
     font-weight: 500;
-
     color: #111;
-
     margin-bottom: 18px;
 }
 
-
-/* =========================================
-   ÁREA DOS CARDS
-   Cards ainda não implementados.
-========================================= */
-
 .containerMaterias {
     display: grid;
-
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
-
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 25px;
-
     width: 100%;
 }
 
+/* =========================================
+   CONFIGURAÇÕES (TEMA E FONTE)
+========================================= */
+
+.barraConfiguracoes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 18px;
+    margin-top: 24px;
+}
+
+.controleConfig {
+    background-color: #ffe5e9;
+    border-radius: 10px;
+    padding: 10px 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #111;
+}
+
+.toggleTema {
+    display: inline-flex;
+    background-color: #f4c8cf;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.opcaoTema {
+    border: none;
+    background: transparent;
+    color: #222;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.opcaoTema.ativo {
+    background-color: #bd2035;
+    color: #fff;
+}
+
+.selectConfig {
+    border: none;
+    background: transparent;
+    color: #bd2035;
+    font-size: 15px;
+    font-weight: 700;
+    outline: none;
+}
+
+/* Escala de fonte */
+body.fonte-pequena {
+    zoom: 0.9;
+}
+
+body.fonte-media {
+    zoom: 1;
+}
+
+body.fonte-grande {
+    zoom: 1.15;
+}
+
+/* Tema escuro na tela de perfil */
+body.tema-escuro {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+body.tema-escuro .areaPrincipal,
+body.tema-escuro .lateralPerfil {
+    background-color: #181818;
+    color: #f5f5f5;
+}
+
+body.tema-escuro .lateralPerfil {
+    border-right-color: #5c242c;
+}
+
+body.tema-escuro .dadosPerfil h2,
+body.tema-escuro .dadosPerfil span,
+body.tema-escuro .secaoMaterias h3,
+body.tema-escuro .tituloEditar h1,
+body.tema-escuro .tituloEditar p,
+body.tema-escuro .campoFormulario label {
+    color: #f5f5f5;
+}
+
+body.tema-escuro .dadosPerfil p {
+    color: #cccccc;
+}
+
+body.tema-escuro .menuPerfil a {
+    color: #f5f5f5;
+}
+
+body.tema-escuro .menuPerfil a:hover {
+    background: #262626;
+}
+
+body.tema-escuro .menuPerfil .excluirConta {
+    color: #ff6b7d;
+}
+
+body.tema-escuro .menuPerfil .excluirConta svg {
+    stroke: #ff6b7d;
+}
+
+body.tema-escuro .instituicao h1,
+body.tema-escuro .cabecalhoMaterias h2 {
+    color: #ff6b7d;
+}
+
+body.tema-escuro #instituicaoInteresse,
+body.tema-escuro .campoFormulario input,
+body.tema-escuro .campoFormulario select {
+    background-color: #262626;
+    color: #f5f5f5;
+    border-color: #444;
+}
+
+body.tema-escuro .controleConfig {
+    background-color: #2b1d20;
+    color: #f5f5f5;
+}
+
+body.tema-escuro .toggleTema {
+    background-color: #3d2a2e;
+}
+
+body.tema-escuro .opcaoTema {
+    color: #f0f0f0;
+}
+
+body.tema-escuro .opcaoTema.ativo {
+    background-color: #e56976;
+    color: #121212;
+}
+
+body.tema-escuro .selectConfig {
+    color: #ff8594;
+}
+
+body.tema-escuro .selectConfig option {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
 
 /* =========================================
    CONTROLE DE TELAS
 ========================================= */
 
 #viewMaterias[hidden],
-#viewEditarPerfil[hidden] {
+#viewEditarPerfil[hidden],
+#viewAlterarSenha[hidden],
+#viewConfiguracoes[hidden] {
     display: none !important;
 }
 
-
 /* =========================================
-   RESPONSIVIDADE - NOTEBOOK
+   RESPONSIVIDADE
 ========================================= */
 
 @media (max-width: 1200px) {
-
     .lateralPerfil {
         width: 260px;
         min-width: 260px;
-
         padding: 35px 22px;
     }
 
@@ -411,16 +461,9 @@ nav-bar {
     .cabecalhoPerfil {
         margin-bottom: 65px;
     }
-
 }
 
-
-/* =========================================
-   TABLET
-========================================= */
-
 @media (max-width: 900px) {
-
     .telaPerfil {
         min-height: auto;
     }
@@ -428,7 +471,6 @@ nav-bar {
     .lateralPerfil {
         width: 230px;
         min-width: 230px;
-
         padding: 30px 18px;
     }
 
@@ -473,16 +515,9 @@ nav-bar {
     .logoPerfil {
         width: 145px;
     }
-
 }
 
-
-/* =========================================
-   MOBILE
-========================================= */
-
 @media (max-width: 650px) {
-
     .telaPerfil {
         flex-direction: column;
     }
@@ -490,9 +525,7 @@ nav-bar {
     .lateralPerfil {
         width: 100%;
         min-width: 0;
-
         padding: 25px 20px;
-
         border-right: none;
         border-bottom: 1px solid #e7a1ac;
     }
@@ -500,7 +533,6 @@ nav-bar {
     .fotoPerfil {
         width: 100px;
         height: 100px;
-
         margin-bottom: 15px;
     }
 
@@ -522,18 +554,14 @@ nav-bar {
 
     .menuPerfil {
         margin-top: 0;
-
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-
         gap: 7px;
     }
 
     .menuPerfil a {
         padding: 9px 7px;
-
         justify-content: flex-start;
-
         font-size: 14px;
     }
 
@@ -548,7 +576,6 @@ nav-bar {
 
     .cabecalhoPerfil {
         gap: 15px;
-
         margin-bottom: 40px;
     }
 
@@ -578,15 +605,18 @@ nav-bar {
         grid-template-columns: 1fr;
     }
 
+    .barraConfiguracoes {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .controleConfig {
+        justify-content: space-between;
+    }
 }
 
-
-/* =========================================
-   MOBILE PEQUENO
-========================================= */
-
 @media (max-width: 380px) {
-
     .menuPerfil {
         grid-template-columns: 1fr;
     }
@@ -599,5 +629,4 @@ nav-bar {
         width: 130px;
         max-width: 100%;
     }
-
 }

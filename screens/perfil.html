@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/navBarPlataforma.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/alterar-senha.css">
+    <link rel="stylesheet" href="/css/configuracoes-perfil.css">
 </head>
 
 <body>
@@ -377,52 +378,52 @@
                 <form id="formAlterarSenha" class="formSenha">
 
                     <div class="campoFormulario">
-                    <label for="senhaAtual">Senha atual</label>
-                    <div class="campoSenha">
-                        <input type="password" id="senhaAtual"
-                            autocomplete="current-password" required>
+                        <label for="senhaAtual">Senha atual</label>
+                        <div class="campoSenha">
+                            <input type="password" id="senhaAtual"
+                                autocomplete="current-password" required>
 
-                        <button type="button" class="btnVerSenha"
-                            aria-label="Mostrar senha" aria-pressed="false">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
-                                <circle cx="12" cy="12" r="3"/>
-                            </svg>
-                        </button>
+                            <button type="button" class="btnVerSenha"
+                                aria-label="Mostrar senha" aria-pressed="false">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                </div>
 
-                <div class="campoFormulario">
-                    <label for="novaSenha">Nova senha</label>
-                    <div class="campoSenha">
-                        <input type="password" id="novaSenha"
-                            minlength="6" autocomplete="new-password" required>
+                    <div class="campoFormulario">
+                        <label for="novaSenha">Nova senha</label>
+                        <div class="campoSenha">
+                            <input type="password" id="novaSenha"
+                                minlength="6" autocomplete="new-password" required>
 
-                        <button type="button" class="btnVerSenha"
-                            aria-label="Mostrar senha" aria-pressed="false">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
-                                <circle cx="12" cy="12" r="3"/>
-                            </svg>
-                        </button>
+                            <button type="button" class="btnVerSenha"
+                                aria-label="Mostrar senha" aria-pressed="false">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                </div>
 
-                <div class="campoFormulario">
-                    <label for="confirmarSenha">Confirmar nova senha</label>
-                    <div class="campoSenha">
-                        <input type="password" id="confirmarSenha"
-                            minlength="6" autocomplete="new-password" required>
+                    <div class="campoFormulario">
+                        <label for="confirmarSenha">Confirmar nova senha</label>
+                        <div class="campoSenha">
+                            <input type="password" id="confirmarSenha"
+                                minlength="6" autocomplete="new-password" required>
 
-                        <button type="button" class="btnVerSenha"
-                            aria-label="Mostrar senha" aria-pressed="false">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
-                                <circle cx="12" cy="12" r="3"/>
-                            </svg>
-                        </button>
+                            <button type="button" class="btnVerSenha"
+                                aria-label="Mostrar senha" aria-pressed="false">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                </div>
 
                     <p id="mensagemSenha" role="status"></p>
 
@@ -433,6 +434,50 @@
                     </div>
 
                 </form>
+
+            </section>
+
+            <!-- CONFIGURAÇÕES (TEMA E FONTE) -->
+            <section id="viewConfiguracoes" class="conteudoEditar" hidden>
+
+                <div class="tituloEditar">
+
+                    <button
+                        type="button"
+                        id="btnVoltarConfiguracoes"
+                        aria-label="Voltar"
+                    >
+                        <svg viewBox="0 0 24 24">
+                            <path d="m15 18-6-6 6-6"/>
+                        </svg>
+                    </button>
+
+                    <div>
+                        <h1>Configurações</h1>
+                    </div>
+
+                </div>
+
+                <div class="barraConfiguracoes">
+
+                    <div class="controleConfig">
+                        <span>Tema</span>
+                        <div class="toggleTema" role="group" aria-label="Selecionar tema">
+                            <button type="button" class="opcaoTema ativo" data-tema="claro">Claro</button>
+                            <button type="button" class="opcaoTema" data-tema="escuro">Escuro</button>
+                        </div>
+                    </div>
+
+                    <div class="controleConfig">
+                        <label for="selectFonte">Fonte:</label>
+                        <select id="selectFonte" class="selectConfig">
+                            <option value="pequena">Pequena</option>
+                            <option value="media" selected>Média</option>
+                            <option value="grande">Grande</option>
+                        </select>
+                    </div>
+
+                </div>
 
             </section>
 

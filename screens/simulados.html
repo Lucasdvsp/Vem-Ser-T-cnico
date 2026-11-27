@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -11,10 +10,10 @@
     <link rel="stylesheet" href="/css/navBarPlataforma.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/simulados.css">
 </head>
 
 <body>
-
 
 <main id="telaSimulados">
 
@@ -49,16 +48,15 @@
             </div>
 
             <div class="parteFiltro">
-                <div  class="titleFiltro">
+                <div class="titleFiltro">
                     <p>MATÉRIAS</p>
                 </div>
                 <div class="filtrosHome">
-                    
-                    <button type="button" class="filtroAtivo">
+                    <button type="button" class="filtroAtivo" data-filtro="tecnicas">
                         Técnicas
                     </button>
 
-                    <button type="button">
+                    <button type="button" data-filtro="escolares">
                         Escolares
                     </button>
                 </div>
@@ -66,20 +64,9 @@
 
         </section>
 
-        <!-- SEÇÕES DE CONTEÚDO -->
-        <section class="secaoHome" id="secaoAulas">
-            <h2>AULAS</h2>
-            <div class="listaCards"></div>
-        </section>
-
-        <section class="secaoHome" id="secaoExercicios">
-            <h2>EXERCÍCIOS</h2>
-            <div class="listaCards"></div>
-        </section>
-
+        <!-- SEÇÕES DE PROVAS E GABARITOS EM PDF -->
         <section class="secaoHome" id="secaoSimulados">
-            <h2>SIMULADOS</h2>
-            <div class="listaCards"></div>
+            <div id="simuladosPdfContainer"></div>
         </section>
 
     </div>
@@ -91,6 +78,7 @@
 
 <script src="/components/navBar.js"></script>
 <script src="/components/footercomponente.js"></script>
+<script src="/scripts/api/simuladosPdf.js"></script>
 
 </body>
 </html>
